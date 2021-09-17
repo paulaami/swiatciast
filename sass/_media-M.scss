@@ -1,0 +1,88 @@
+@media screen and (min-width: 768px) {
+  .header__logo {
+    &-img {
+      width: 350px;
+      height: 350px;
+      top: -85px;
+    }
+  }
+
+  .main__section {
+    &-container {
+      margin-top: 170px;
+    }
+  }
+
+  .main__section-box {
+    top: -60px;
+    .text-serif-style {
+      font-size: 2.4rem;
+    }
+  }
+
+  .about__section {
+    &-container {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 720px;
+      &-photo {
+        height: 440px;
+        max-width: 360px;
+      }
+
+      &-text {
+        margin-top: 0;
+      }
+    }
+  }
+
+  .offer__section {
+    margin-top: 70px;
+    &-container {
+      flex-direction: row;
+      justify-content: space-between;
+      width: 740px;
+      &-box {
+        max-width: 32%;
+
+        .offer-text {
+          width: 80%;
+        }
+      }
+    }
+  }
+
+  .opinion__section {
+   overflow: hidden;
+ &-container {
+  width: 85vw;
+ }
+
+ &-header {
+  img {
+   display: block;
+   position: absolute;
+   transform: rotate(180deg);
+   top: 100px;
+   right: -15px;
+   width: 190px;
+   height: 190px;
+   z-index: 100;
+  }
+ }
+
+   &-box {
+     &-text {
+       max-width: 600px;
+     }
+   }
+
+ .slick-prev {
+  left: -40px;
+ }
+
+ .slick-next {
+  right: -40px;
+ }
+}
+}

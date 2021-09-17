@@ -1,0 +1,26 @@
+@media screen and (min-width:375px) {
+
+ .opinion__section {
+  .slick-prev {
+    left: -25px;
+  }
+
+  .slick-next {
+    right: -25px;
+  }
+
+  &-container {
+    width: 85vw;
+    margin: 0 auto;
+    padding: 30px 25px;
+  }
+
+  &-box {
+    &-photo {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+}

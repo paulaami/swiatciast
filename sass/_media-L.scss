@@ -1,61 +1,89 @@
 @media screen and (min-width: 992px) {
- .offer__section {
-  &-container {
-   width: 940px;
-   &-box {
-    height: 400px;
-   }
+
+ .about__section {
+  &-background {
+   .frame-one {
+    position: absolute;
+    top: -90px;
+    left: -90px;
+    display: block;
+    width: 200px;
+    transform: rotate(135deg);
+    fill: #D0A098;
+  }
+
+  .frame-two {
+    position: absolute;
+    bottom: -90px;
+    right: -90px;
+    display: block;
+    width: 200px;
+    fill: #D0A098;
+    transform: rotate(-45deg);
+  }
   }
  }
 
- .opinion__section {
-		&-container {
-			flex-direction: row;
-			justify-content: space-around;
-			padding: 30px 60px;
-			max-width: 1000px;
-		}
+ 
+ 
+ .offer__section {
+    &-container {
+      width: 940px;
+      &-box {
+        height: 400px;
+      }
+    }
+  }
 
-		.slick-prev {
-			left: 0;
-		}
+  .opinion__section {
+    &-container {
+      flex-direction: row;
+      justify-content: space-around;
+      padding: 30px 60px;
+      max-width: 1000px;
+    }
 
-		.slick-next {
-			right: 0px;
-		}
-	}
+    .slick-prev {
+      left: 0;
+    }
+
+    .slick-next {
+      right: 0px;
+    }
+  }
 }
-
 
 @media screen and (min-width: 1200px) {
- .about__section {
-  &-container {
-   width: 800px;
-   &-photo {
-    height: 530px;
-    max-width: 390px;
-   }
-   .button-style {
-    position: relative;
-    left: -12px;
-   }
+  .about__section {
+    &-container {
+      width: 800px;
+      &-photo {
+        height: 530px;
+        max-width: 390px;
+      }
 
-   h3 {
-    font-size: 4rem;
-    letter-spacing: .1rem;
-    text-align: left;
-   }
+      h3 {
+        font-size: 4rem;
+        letter-spacing: 0.1rem;
+        text-align: left;
+      }
+      &-text {
+       .text-frame {
+        top: -145px;
+        left: -200px;
+        right: -40px;
+        bottom: -145px;
+       }
+      }
+    }
   }
- }
 
- .offer__section {
-  &-container {
-   width: 1050px;
-   &-box {
-    height: 440px;
-   }
+  .offer__section {
+    &-container {
+      width: 1050px;
+      &-box {
+        height: 440px;
+      }
+    }
   }
- }
- 
 }
-

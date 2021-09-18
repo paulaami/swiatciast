@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Słodki Świat Ciast</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+SC:wght@300;400;500&&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -39,7 +43,7 @@
       </div>
     </nav>
 
-    <section class="main__section">
+    <section class="main__section flex-column">
       <div class="main__section-container">
         <img
           src="./img/rose-cake-s.jpg"
@@ -57,25 +61,32 @@
           class="main__section-container-img"
         />
       </div>
-      <div class="main__section-box">
+      <div class="main__section-box flex-column">
         <h2 class="text-serif-style">Z miłości do pieczenia</h2>
         <p class="main__section-box-text text-style">
           Najlepsze ciasta, naturalne składniki, torty na różne okazje...
         </p>
-          <a class="main__section-box-link button-style" href="#">zobacz ofertę</a>
-
+        <a class="main__section-box-link button-style" href="#"
+          >zobacz ofertę</a
+        >
       </div>
     </section>
 
     <section class="about__section">
-      <div class="about__section-container">
+      <div class="about__section-background">
+        <svg class="frame-one"xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 192l128 128 128-128"></path></svg>
+        <svg class="frame-two" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M128 192l128 128 128-128"></path></svg>
+      </div>
+      <div class="about__section-container flex-column">
         <div class="about__section-container-photo">
-          <img
+          <img class="image-style"
             src="./img/236983064_831097744432851_7213063889319723144_n.jpg"
             alt=""
           />
+          <h2>o mnie</h2>
         </div>
         <div class="about__section-container-text">
+          <div class="text-frame"></div>
           <h3>Witajcie!</h3>
           <p class="text-serif-style">Nazywam się Renata.</p>
           <p class="text-style">
@@ -89,27 +100,47 @@
         </div>
       </div>
     </section>
-
-    <section class="offer__section">
+    <section class="offer__section flex-column">
+      <div class="section-line"></div>
       <h1 class="offer__section-heading">Oferta</h1>
-      <div class="offer__section-container">
-        <div class="offer__section-container-box offer-one"><img src="./img/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg" alt=""> <div class="offer-text"><p>torty urodzinowe</p></div></div>
-        <div class="offer__section-container-box offer-two"><img src="./img/jonathan-borba-nEfuH1yjZIg-unsplash.jpg" alt=""><div class="offer-text"><p>ciasta weselne</p></div></div>
-        <div class="offer__section-container-box offer-three"><img src="./img/samia-liamani-HGl1Q2Y-mbw-unsplash.jpg" alt=""><div class="offer-text"><p>candy bar</p></div></div>
+      <div class="offer__section-container flex-column">
+        <div class="offer__section-container-box offer-one">
+          <img class="image-style" src="./img/deva-williamson-tW0Ix_Ajg6Y-unsplash.jpg" alt="" />
+          <div class="offer-text"><p>torty urodzinowe</p></div>
+        </div>
+        <div class="offer__section-container-box offer-two">
+          <img class="image-style" src="./img/jonathan-borba-nEfuH1yjZIg-unsplash.jpg" alt="" />
+          <div class="offer-text"><p>ciasta weselne</p></div>
+        </div>
+        <div class="offer__section-container-box offer-three">
+          <img class="image-style" src="./img/samia-liamani-HGl1Q2Y-mbw-unsplash.jpg" alt="" />
+          <div class="offer-text"><p>candy bar</p></div>
+        </div>
       </div>
-      <div class="offer__section-description"><p>Tutaj kilka słów o ofercie - można zrobić opcje najedz myszka na obrazek a pojawi się na nim opis oferty na białym tle. Może być tak jak w ten sposób czyli opis oderty pod obrazkiem z daną ofertą. Czekam na pomysły i info co umieścić w tym miejscu i jak przedstawić ofertę.</p></div>
+      <div class="offer__section-description">
+        <p>
+          Tutaj kilka słów o ofercie - można zrobić opcje najedz myszka na
+          obrazek a pojawi się na nim opis oferty na białym tle. Może być tak
+          jak w ten sposób czyli opis oderty pod obrazkiem z daną ofertą. Czekam
+          na pomysły i info co umieścić w tym miejscu i jak przedstawić ofertę.
+        </p>
+      </div>
     </section>
 
     <section class="opinion__section">
       <div class="opinion__section-header">
         <h2 class="small-uppercase-style">Opinie klientów</h2>
-        <p></p>
+        <img class="opinion-quote" src="/svg/111116_quote_icon.svg" alt="">
       </div>
-  
+
       <div class="opinion__section-container carousel">
         <div class="opinion__section-box">
           <div class="opinion__section-box-photo">
-            <img class="opinion__section-box-img" src="./img/KarolinaS.jpg" alt="Zdjęcie podopiecznej Karoliny S." />
+            <img
+              class="opinion__section-box-img image-style"
+              src="./img/KarolinaS.jpg"
+              alt="Zdjęcie podopiecznej Karoliny S."
+            />
           </div>
           <p class="opinion__section-box-text small-lowercase-style">
             "Bardzo polecam ćwiczenia z Karoliną wszystkim tym, którzy nawet
@@ -124,24 +155,47 @@
           </p>
           <p class="opinion__section-box-signature">Karolina S.</p>
         </div>
-  
+
         <div class="opinion__section-box">
           <div class="opinion__section-box-photo">
-            <img class="opinion__section-box-img" src="./img/Marta P.jpg" alt="Zdjęcie podopiecznej Zosi K." />
+            <img
+              class="opinion__section-box-img image-style"
+              src="./img/Marta P.jpg"
+              alt="Zdjęcie podopiecznej Zosi K."
+            />
           </div>
           <p class="opinion__section-box-text small-lowercase-style">
-            "Trenuje z Karolina od pewnego czasu i dopiero dzięki jej treningom zrozumiałam jak poprawnie wykonywać ćwiczenia, że treningi cardio to nie wszystko. Nauczyłam
-            się jak ważne jest wzmacnianie ciała. Karolina to bardzo profesjonalny trener (wiem co mówię, kilku miałam) wie w jakim momencie i jak przekazać informacje, że ćwiczenie jest źle wykonywane. Jest bardzo wyrozumiała, nie pośpiesza. Jeżeli widzi, że dane ćwiczenie sprawia trudność umie go tak wkomponować w trening, że nie jest już tak trudne jak na początku. Treningi Karoliny to nie tylko ciężary (ich też nie brakuje) ale także mobilność, o której całkowicie zapominamy. Dodatkowo na profilu Karoliny jest baardzo dużo wiedzy teoretycznej, której tak łatwo nie znajdzie się na innych profilach."
+            "Trenuje z Karolina od pewnego czasu i dopiero dzięki jej treningom
+            zrozumiałam jak poprawnie wykonywać ćwiczenia, że treningi cardio to
+            nie wszystko. Nauczyłam się jak ważne jest wzmacnianie ciała.
+            Karolina to bardzo profesjonalny trener (wiem co mówię, kilku
+            miałam) wie w jakim momencie i jak przekazać informacje, że
+            ćwiczenie jest źle wykonywane. Jest bardzo wyrozumiała, nie
+            pośpiesza. Jeżeli widzi, że dane ćwiczenie sprawia trudność umie go
+            tak wkomponować w trening, że nie jest już tak trudne jak na
+            początku. Treningi Karoliny to nie tylko ciężary (ich też nie
+            brakuje) ale także mobilność, o której całkowicie zapominamy.
+            Dodatkowo na profilu Karoliny jest baardzo dużo wiedzy teoretycznej,
+            której tak łatwo nie znajdzie się na innych profilach."
           </p>
           <p class="opinion__section-box-signature">Marta P.</p>
         </div>
-  
+
         <div class="opinion__section-box">
           <div class="opinion__section-box-photo photo-three">
-            <img class="opinion__section-box-img" src="./img/AnnaK.jpg" alt="Zdjęcie podopiecznej Pauliny R." />
+            <img
+              class="opinion__section-box-img image-style"
+              src="./img/AnnaK.jpg"
+              alt="Zdjęcie podopiecznej Pauliny R."
+            />
           </div>
           <p class="opinion__section-box-text small-lowercase-style">
-            "Od niedawna trenuję z Karoliną, a już widzę poprawę, wzmocnienie i stabilizację w ciele. Skuteczność Karoliny wynika z tego, że posiada konkretną wiedzę o układzie ruchu, a nie działa w ciemno. Poczucie humoru i dostosowanie intensywności ćwiczeń indywidualnie sprawia, że trenuje się z przyjemnością! Nawet jak się mega nie chce, to po treningu wraca energia. Polecam najmocniej!"
+            "Od niedawna trenuję z Karoliną, a już widzę poprawę, wzmocnienie i
+            stabilizację w ciele. Skuteczność Karoliny wynika z tego, że posiada
+            konkretną wiedzę o układzie ruchu, a nie działa w ciemno. Poczucie
+            humoru i dostosowanie intensywności ćwiczeń indywidualnie sprawia,
+            że trenuje się z przyjemnością! Nawet jak się mega nie chce, to po
+            treningu wraca energia. Polecam najmocniej!"
           </p>
           <p class="opinion__section-box-signature">Anna K.</p>
         </div>
@@ -149,21 +203,59 @@
     </section>
 
     <section class="contact__section">
-      <h2>Formularz kontaktowy</h2>
-      <div class="contact__section-container">
-        <form action="">
-          <input type="text" placeholder="Imię" />
-          <input type="text" placeholder="Wiadomość" />
-          <button type="submit" class="button-style">Wyślij &#8594;</button>
-        </form>
+      <div class="contact__section-container flex-column">
+        <div class="contact__section-container-photo">
+          <img class="image-style" src="/img/pexels-katerina-holmes-5907554.jpg" alt="" srcset="" />
+        </div>
+        <div class="contact__section-container-form flex-column">
+          <h4 class="text-serif-style">Złóż zamówienie</h4>
+          <p class="text-style">Wystarczy wypełnić poniższy formularz podając w treści wiadomości wybrane zamówienie.</p>
+          <form class="flex-column" action="">
+            <input type="text" placeholder="Imię" />
+            <input type="text" placeholder="Wiadomość" />
+            <button type="submit" class="button-style">Wyślij &#8594;</button>
+          </form>
+        </div>
       </div>
     </section>
 
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="./js/aos.js"></script>
-  <script src="./js/slick.js"></script>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__container-top">
+          <a class="footer__container-top-link">to top
+            <svg class="to-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z">
+              </path>
+            </svg>
+          </a>
+        </div>
+        <div class="footer__container-policy">
+          <a class="footer__container-text small-uppercase-style" target="_blank" href="">Regulamin</a>
+          <span>|</span>
+          <a class="footer__container-text small-uppercase-style" target="_blank" href="">Polityka prywatności</a>
+        </div>
+        <div class="footer__container-copyrights">
+          <a class="footer__container-text small-uppercase-style" target="_blank" href="https://www.instagram.com/milko.design/">© 2021
+            milko design</a>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/aos.js"></script>
+    <script src="./js/slick.js"></script>
   </body>
 </html>

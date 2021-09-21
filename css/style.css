@@ -23,7 +23,11 @@ body {
 
 a {
   text-decoration: none;
-  color: #6e6e6e;
+  color: #fff;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h3 {
@@ -41,7 +45,8 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  background-color: #dcc8be;
+  background-color: #855743;
+  /*#463938*/
 }
 
 .text-style {
@@ -80,6 +85,124 @@ h3 {
      object-fit: cover;
 }
 
+header {
+  z-index: 20;
+  /* should add position fixed in JS */
+}
+
+.nav__container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
+}
+
+.nav__container-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-transform: uppercase;
+}
+
+.nav__container-list-item:nth-of-type(3) {
+  display: block;
+  width: 350px;
+  height: 0;
+  z-index: 20;
+}
+
+.nav__container .flex-item {
+  display: none;
+}
+
+.nav__container-menu {
+  position: absolute;
+  top: 142px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 20;
+}
+
+.nav__container-menu-mobile {
+  display: none;
+}
+
+.nav__container-menu-mobile li {
+  position: relative;
+  top: 0px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.nav__container-menu-mobile-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  top: 30px;
+}
+
+.nav__container-menu-mobile-social a {
+  display: block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  background-color: #c48690;
+  border-radius: 50%;
+}
+
+.nav__container-menu-mobile-social a:first-of-type {
+  margin-right: 10px;
+}
+
+.nav__container-menu-mobile-social svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 25px;
+  fill: #fff;
+}
+
+.nav__container-menu .line {
+  width: 26px;
+  height: 2px;
+  background-color: #6c6c6c;
+  margin: 5px;
+}
+
+.show-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .header__logo-img {
   position: absolute;
   top: -60px;
@@ -90,6 +213,54 @@ h3 {
   height: 270px;
 }
 
+.show-fixed {
+  position: fixed;
+}
+
+/*.nav__container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    &-item:nth-of-type(3) {
+      display: block;
+      width: 350px;
+      height: 0;
+    }
+  }
+  .flex-item {
+    position: relative;
+    top: 50px;
+    // display: none;
+  }
+
+  &-menu {
+    position: absolute;
+    top: 142px;
+    left: 50%;
+    transform: translateX(-50%);
+    .line {
+      width: 26px;
+      height: 2px;
+      background-color: #6c6c6c;
+      margin: 5px;
+    }
+  }
+}
+
+.header__logo-img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 270px;
+  height: 270px;
+}*/
 .main__section {
   margin-bottom: 170px;
 }
@@ -105,7 +276,7 @@ h3 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 95vw;
+  width: 100vw;
   max-width: 1100px;
 }
 
@@ -119,7 +290,7 @@ h3 {
   padding: 40px 20px;
   width: 85vw;
   max-width: 540px;
-  background-color: #fbf5f4;
+  background-color: #F0E7DE;
 }
 
 .main__section-box h2 {
@@ -151,7 +322,7 @@ h3 {
   left: 10px;
   right: 10px;
   bottom: 20px;
-  background-color: #fbf5f4;
+  background-color: #dacec5;
   z-index: -1;
 }
 
@@ -515,13 +686,27 @@ h3 {
 }
 
 @media screen and (min-width: 768px) {
+  .nav__container .flex-item {
+    display: block;
+    position: relative;
+    top: 60px;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+  .nav__container-list-item:nth-of-type(3) {
+    width: 280px;
+    height: 0;
+  }
+  .nav__container-menu {
+    display: none;
+  }
   .header__logo-img {
     width: 350px;
     height: 350px;
     top: -85px;
   }
   .main__section-container {
-    margin-top: 170px;
+    margin-top: 130px;
   }
   .main__section-box {
     top: -60px;

@@ -1,4 +1,27 @@
 @media screen and (min-width: 768px) {
+
+  .nav__container {
+    .flex-item {
+      display: block;
+      position: relative;
+      top: 60px;
+      font-size: 1.6rem;
+      font-weight: 500;
+    }
+
+    &-list {
+      &-item:nth-of-type(3) {
+        width: 280px;
+        height: 0;
+      }
+    }
+
+    &-menu {
+      display: none;
+    }
+  }
+
+
   .header__logo {
     &-img {
       width: 350px;
@@ -9,12 +32,13 @@
 
   .main__section {
     &-container {
-      margin-top: 170px;
+      margin-top: 130px;
     }
   }
 
   .main__section-box {
     top: -60px;
+
     .text-serif-style {
       font-size: 2.4rem;
     }
@@ -22,14 +46,17 @@
 
   .about__section {
     padding-bottom: 120px;
+
     &-background {
       left: 20px;
       right: 20px;
     }
+
     &-container {
       flex-direction: row;
       justify-content: space-between;
       width: 720px;
+
       &-photo {
         height: 440px;
         max-width: 360px;
@@ -37,6 +64,7 @@
 
       &-text {
         margin-top: 0;
+
         .text-frame {
           position: absolute;
           // border: 1px solid $main-gray;
@@ -56,11 +84,14 @@
     .section-line {
       top: -90px;
     }
+
     margin: 40px 20px;
+
     &-container {
       flex-direction: row;
       justify-content: space-between;
       width: 740px;
+
       &-box {
         max-width: 32%;
 
@@ -73,6 +104,7 @@
 
   .opinion__section {
     overflow: hidden;
+
     &-container {
       width: 85vw;
     }

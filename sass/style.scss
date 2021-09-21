@@ -28,7 +28,11 @@ body {
 
 a {
   text-decoration: none;
-  color: $main-gray;
+  color: $pure-white;
+}
+
+ul {
+  list-style-type: none;
 }
 
 h3 {
@@ -46,8 +50,8 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  background-color: $dark-pink;
-  // border: 1px solid $main-gray;
+  background-color: #855743; /*#463938*/
+  // border: 1px solid $main-gray https://mycolor.space/?hex=%23F0E7DE&sub=1;
 }
 
 .text-style {
@@ -78,6 +82,105 @@ h3 {
 
 //HEADER
 
+
+header {
+  z-index: 20;   /* should add position fixed in JS */
+}
+.nav__container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    &-item:nth-of-type(3) {
+      display: block;
+      width: 350px;
+      height: 0;
+      z-index: 20;
+    }
+  }
+  .flex-item {
+    display: none;
+  }
+
+  &-menu {
+    position: absolute;
+    top: 142px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+
+    &-mobile {
+      display: none;
+
+      li {
+        position: relative;
+        top: 0px;
+        padding-bottom: 25px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+      }
+
+      &-social {
+        display: flex;
+        position: relative;
+        top: 30px;
+
+        a {
+          display: block;
+          position: relative;
+          width: 40px;
+          height: 40px;
+          background-color: #c48690;
+          border-radius: 50%;
+          &:first-of-type {
+            margin-right: 10px;
+          }
+        }
+      
+        svg {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+          width: 25px;
+          fill:$pure-white;
+        }
+      }
+    }
+    .line {
+      width: 26px;
+      height: 2px;
+      background-color: #6c6c6c;
+      margin: 5px;
+    }
+  }
+}
+
+.show-nav {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
 .header__logo-img {
   position: absolute;
   top: -60px;
@@ -86,6 +189,57 @@ h3 {
   width: 270px;
   height: 270px;
 }
+
+
+.show-fixed {
+  position: fixed;
+}
+
+
+/*.nav__container {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px 30px;
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    &-item:nth-of-type(3) {
+      display: block;
+      width: 350px;
+      height: 0;
+    }
+  }
+  .flex-item {
+    position: relative;
+    top: 50px;
+    // display: none;
+  }
+
+  &-menu {
+    position: absolute;
+    top: 142px;
+    left: 50%;
+    transform: translateX(-50%);
+    .line {
+      width: 26px;
+      height: 2px;
+      background-color: #6c6c6c;
+      margin: 5px;
+    }
+  }
+}
+
+.header__logo-img {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 270px;
+  height: 270px;
+}*/
 
 // MAIN SECTION
 
@@ -98,7 +252,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 95vw;
+  width: 100vw;
   max-width: 1100px;
   &-img {
     width: 33%;
@@ -111,7 +265,7 @@ h3 {
   padding: 40px 20px;
   width: 85vw;
   max-width: 540px;
-  background-color: $light-pink;
+  background-color: #F0E7DE;
   // &::after {
   //  content: '';
   //  position: absolute;
@@ -153,7 +307,7 @@ h3 {
     left: 10px;
     right: 10px;
     bottom: 20px;
-    background-color: $light-pink;
+    background-color: #dacec5;
     z-index: -1;
     svg {
       display: none;

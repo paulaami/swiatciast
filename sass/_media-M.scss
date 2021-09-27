@@ -1,5 +1,4 @@
 @media screen and (min-width: 768px) {
-
   .nav__container {
     .flex-item {
       display: block;
@@ -21,7 +20,6 @@
     }
   }
 
-
   .header__logo {
     &-img {
       width: 350px;
@@ -34,10 +32,29 @@
     &-container {
       margin-top: 130px;
       &-box {
+        position: relative;
         height: 480px;
+
+        &-text {
+          li {
+            font-size: 3rem;
+          }
+        }
       }
       &-box:nth-of-type(2) {
         height: 500px;
+      }
+      &-box:nth-of-type(1)::before,
+      &-box:nth-of-type(3)::before {
+        position: absolute;
+        content: "";
+        top: 25px;
+        left: 25px;
+        bottom: 25px;
+        right: 25px;
+        border: 1px solid #fff;
+        background-color: transparent;
+        z-index: 1;
       }
     }
   }
@@ -164,7 +181,6 @@
       }
     }
   }
-
 
   .footer__container {
     margin: 0 auto;

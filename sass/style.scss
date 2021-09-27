@@ -172,6 +172,10 @@ header {
         text-align: center;
         font-size: 2rem;
         font-weight: 500;
+        color: $main-gray;
+        a {
+          color: $main-gray;
+        }
       }
 
       &-social {
@@ -241,7 +245,7 @@ header {
 // MAIN SECTION
 
 .main__section {
-  margin-bottom: 170px;
+  margin-bottom: 100px;
 }
 
 .main__section-container {
@@ -253,8 +257,32 @@ header {
   max-width: 1100px;
   overflow: hidden;
   &-box {
+    position: relative;
     width: 33%;
-    height: 250px;
+    height: 200px;
+    &-text, &-heading {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+      li {
+        text-align: center;
+        color: #fff;
+        font-family: 'Cormorant';
+        font-size: 1.8rem;
+        letter-spacing: .05rem;
+        text-shadow: 3px 3px 17px black;
+      }
+    }
+    &:nth-of-type(2) {
+      height: 230px;
+    }
+    &-heading {
+      font-family: 'Cormorant SC';
+      font-size: 2rem;
+      color: #fff;
+    }
   }
   &-img {
     opacity: .9;

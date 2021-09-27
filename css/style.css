@@ -27,7 +27,7 @@ html {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Cormorant", serif;
   font-size: 1.5rem;
   overflow-x: hidden;
   color: #2d2d2b;
@@ -50,9 +50,10 @@ h3 {
 h2,
 h1 {
   font-family: "Schnyder", serif;
-  font-size: 3.4rem;
+  font-size: 2.8rem;
   text-transform: none;
   font-weight: 400;
+  letter-spacing: 0.1rem;
 }
 
 h3 {
@@ -67,9 +68,9 @@ h3 {
   width: 100%;
   max-width: 250px;
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   background-color: #855743;
@@ -80,18 +81,16 @@ h3 {
 
 .text-style {
   font-weight: 500;
-  width: 260px;
   font-size: 1.4rem;
   line-height: 1.7;
   color: #2d2d2d;
 }
 
 .text-serif-style {
-  font-size: 2rem;
+  font-size: 2.8rem;
   font-family: "Schnyder";
   text-transform: none;
   font-weight: 500;
-  font-size: 35px;
   color: #2d2d2b;
 }
 
@@ -100,7 +99,9 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
+  margin-bottom: 5px;
+  text-align: center;
 }
 
 .flex-column {
@@ -171,7 +172,7 @@ header {
 
 .nav__container-menu {
   position: absolute;
-  top: 142px;
+  top: 145px;
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
@@ -274,11 +275,11 @@ header {
 }
 
 .main__section {
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .main__section-container {
-  margin-top: 140px;
+  margin-top: 145px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,10 +311,11 @@ header {
 .main__section-container-box-text li, .main__section-container-box-heading li {
   text-align: center;
   color: #fff;
-  font-family: 'Cormorant';
+  font-family: "Cormorant", serif;
   font-size: 1.8rem;
-  letter-spacing: .05rem;
-  text-shadow: 3px 3px 17px black;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px 14px black;
+  margin-bottom: 10px;
 }
 
 .main__section-container-box:nth-of-type(2) {
@@ -321,15 +323,27 @@ header {
 }
 
 .main__section-container-box-heading {
-  font-family: 'Cormorant SC';
+  font-family: "Cormorant", serif;
   font-size: 2rem;
   color: #fff;
+  letter-spacing: 0.1rem;
+  text-shadow: 1px 1px 34px black;
+  text-align: center;
 }
 
 .main__section-container-img {
-  opacity: .9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
   -webkit-filter: brightness(70%);
           filter: brightness(70%);
+}
+
+.main__section-container-img:nth-last-of-type(1) {
+  -webkit-animation: 7s fadeInOut linear infinite;
+          animation: 7s fadeInOut linear infinite;
+  opacity: 0;
 }
 
 .main__section-box {
@@ -369,22 +383,7 @@ header {
 
 .about__section {
   position: relative;
-  padding: 50px 0 80px 0;
   z-index: 0;
-}
-
-.about__section-background {
-  position: absolute;
-  top: -50px;
-  left: 10px;
-  right: 10px;
-  bottom: 20px;
-  background-color: #F0E7DE;
-  z-index: -1;
-}
-
-.about__section-background svg {
-  display: none;
 }
 
 .about__section-container {
@@ -394,45 +393,33 @@ header {
 
 .about__section-container-photo {
   position: relative;
-  width: 75vw;
+  width: 80vw;
   height: 300px;
   max-width: 320px;
   z-index: 0;
-}
-
-.about__section-container-photo::after {
-  position: absolute;
-  content: "";
-  top: -4px;
-  left: -4px;
-  right: -4px;
-  bottom: -4px;
-  border: 1px solid #6c6c6c;
-  background-color: #fff;
-  z-index: -1;
 }
 
 .about__section-container-photo img {
   -o-object-position: 60% 10%;
      object-position: 60% 10%;
   opacity: 0.9;
+  border: 3px solid #fff;
 }
 
-.about__section-container-photo h2 {
-  position: absolute;
-  font-family: "Cormorant SC";
-  font-size: 4rem;
+.about__section-container-heading {
+  margin-bottom: 40px;
+  letter-spacing: 0.1rem;
+  font-size: 2.8rem;
   font-weight: 300;
-  top: -75px;
   text-align: center;
-  letter-spacing: 0.3rem;
-  width: 100%;
 }
 
 .about__section-container-text {
   position: relative;
   padding: 0 10px;
   margin-top: 30px;
+  width: 80vw;
+  max-width: 320px;
 }
 
 .about__section-container-text h3 {
@@ -451,25 +438,67 @@ header {
 
 .section-line {
   position: absolute;
-  top: -130px;
+  top: -70px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
   width: 0.3px;
   height: 110px;
-  background-color: #787373;
+  background-color: #2d2d2b;
   z-index: 6;
+}
+
+@-webkit-keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 1;
+  }
+  15% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 0;
+  }
+  85% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .offer__section {
   position: relative;
-  margin: 80px 10px 30px 10px;
-  padding: 50px 20px;
+  margin: 120px 10px 30px 10px;
+  padding: 90px 20px;
   z-index: 0;
 }
 
 .offer__section-heading {
-  text-transform: uppercase;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -488,6 +517,44 @@ header {
   max-width: 300px;
   height: 320px;
   margin-bottom: 60px;
+  z-index: 0;
+}
+
+.offer__section-container-box img {
+  opacity: 0.9;
+  -webkit-filter: brightness(50%);
+          filter: brightness(50%);
+  z-index: -1;
+}
+
+.offer__section-container-box-text {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+}
+
+.offer__section-container-box-text p {
+  font-family: "Cormorant", serif;
+  text-shadow: 0px 0px 4px black;
+  letter-spacing: 0.1rem;
+}
+
+.offer__section-container-box-text p:first-of-type {
+  font-size: 2rem;
+  font-family: "Schnyder", serif;
 }
 
 .offer__section-container-box .offer-text {
@@ -500,6 +567,7 @@ header {
   text-align: center;
   padding: 20px;
   background-color: #6a4531;
+  font-family: "Montserrat", sans-serif;
 }
 
 .offer__section-container-box .offer-text::after {
@@ -513,8 +581,7 @@ header {
 }
 
 .offer__section-container-box .offer-text p {
-  font-family: "Schnyder";
-  font-size: 1.6rem;
+  font-size: 1.3rem;
   letter-spacing: 0.2rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -703,6 +770,18 @@ header {
 }
 
 @media screen and (min-width: 375px) {
+  .main__section-container-box {
+    height: 250px;
+  }
+  .main__section-container-box li {
+    font-size: 2.1rem;
+  }
+  .main__section-container-box-heading {
+    font-size: 2.4rem;
+  }
+  .main__section-container-box:nth-of-type(2) {
+    height: 270px;
+  }
   .opinion__section .slick-prev {
     left: -10px;
   }
@@ -719,6 +798,12 @@ header {
 @media screen and (min-width: 414px) {
   .main__section-container-box {
     height: 300px;
+  }
+  .main__section-container-box li {
+    font-size: 2.3rem;
+  }
+  .main__section-container-box-heading {
+    font-size: 2.7rem;
   }
   .main__section-container-box:nth-of-type(2) {
     height: 320px;
@@ -764,6 +849,9 @@ header {
   .main__section-container-box-text li {
     font-size: 3rem;
   }
+  .main__section-container-box-heading {
+    font-size: 3.3rem;
+  }
   .main__section-container-box:nth-of-type(2) {
     height: 500px;
   }
@@ -803,7 +891,7 @@ header {
   }
   .about__section-container-photo {
     height: 440px;
-    max-width: 360px;
+    max-width: 340px;
   }
   .about__section-container-text {
     margin-top: 0;
@@ -935,11 +1023,15 @@ header {
     -webkit-transform: rotate(-45deg);
             transform: rotate(-45deg);
   }
+  .offer__section {
+    background-color: #E3D6C7;
+  }
   .offer__section-container {
-    width: 940px;
+    width: 810px;
   }
   .offer__section-container-box {
-    height: 400px;
+    height: 420px;
+    max-width: 360px;
   }
   .opinion__section-container {
     -webkit-box-orient: horizontal;
@@ -985,7 +1077,7 @@ header {
     bottom: -145px;
   }
   .offer__section-container {
-    width: 1050px;
+    width: 900px;
   }
   .offer__section-container-box {
     height: 440px;

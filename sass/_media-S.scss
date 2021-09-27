@@ -1,4 +1,20 @@
 @media screen and (min-width: 375px) {
+  .main__section-container {
+    &-box {
+      height: 250px;
+
+      li {
+        font-size: 2.1rem;
+      }
+      &-heading {
+        font-size: 2.4rem;
+      }
+    }
+    &-box:nth-of-type(2) {
+      height: 270px;
+    }
+  }
+
   .opinion__section {
     .slick-prev {
       left: -10px;
@@ -21,6 +37,12 @@
   .main__section-container {
     &-box {
       height: 300px;
+      li {
+        font-size: 2.3rem;
+      }
+      &-heading {
+        font-size: 2.7rem;
+      }
     }
     &-box:nth-of-type(2) {
       height: 320px;

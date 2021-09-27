@@ -1,5 +1,16 @@
 @media screen and (min-width: 992px) {
 
+  .main__section {
+    &-container {
+      &-box {
+        height: 560px;
+      }
+      &-box:nth-of-type(2) {
+        height: 590px;
+      }
+    }
+  }
+
  .about__section {
   &-background {
    .frame-one {
@@ -54,6 +65,17 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .main__section {
+    &-container {
+      &-box {
+        height: 580px;
+      }
+      &-box:nth-of-type(2) {
+        height: 620px;
+      }
+    }
+  }
+
   .about__section {
     &-container {
       width: 800px;

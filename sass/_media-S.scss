@@ -1,11 +1,11 @@
 @media screen and (min-width: 375px) {
   .opinion__section {
     .slick-prev {
-      left: -25px;
+      left: -10px;
     }
 
     .slick-next {
-      right: -25px;
+      right: -10px;
     }
 
     &-container {
@@ -13,12 +13,28 @@
       margin: 0 auto;
       padding: 30px 25px;
     }
+  }
+}
 
+
+@media screen and (min-width: 414px) {
+  .main__section-container {
     &-box {
-      &-photo {
-        width: 150px;
-        height: 150px;
-      }
+      height: 300px;
+    }
+    &-box:nth-of-type(2) {
+      height: 320px;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .main__section-container {
+    &-box {
+      height: 380px;
+    }
+    &-box:nth-of-type(2) {
+      height: 400px;
     }
   }
 }

@@ -4,12 +4,21 @@
     url("../fonts/quentin.woff2") format("woff2"),
     url("../fonts/quentin.woff") format("woff");
 }
+@font-face {
+  font-family: "Denmark";
+  src: url("../fonts/Denmark.woff") format("woff");
+}
 
+@font-face {
+  font-family: "Schnyder";
+  src: url("../fonts/schnyders-demi-web.woff") format("woff");
+}
 
 @import "./colors";
 
-
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -20,7 +29,7 @@ html {
 }
 
 body {
-  font-family: "Cormorant", serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   overflow-x: hidden;
   color: $main-gray;
@@ -40,6 +49,20 @@ h3 {
   font-size: 3.5rem;
 }
 
+h2,
+h1 {
+  font-family: "Schnyder", serif;
+  font-size: 3.4rem;
+  text-transform: none;
+  font-weight: 400;
+}
+
+h3 {
+  font-family: "Denmark";
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
 .button-style {
   display: block;
   padding: 15px;
@@ -47,24 +70,39 @@ h3 {
   max-width: 250px;
   text-align: center;
   font-size: 1.3rem;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  background-color: #855743; /*#463938*/
+  background-color: $dark-brown; /*#463938*/
   // border: 1px solid $main-gray https://mycolor.space/?hex=%23F0E7DE&sub=1;
+  color: $pure-white;
+  border: 1px solid #2d2d2b;
 }
 
 .text-style {
-  font-weight: 300;
+  font-weight: 500;
   width: 260px;
   font-size: 1.4rem;
   line-height: 1.7;
+  color: #2d2d2d;
 }
 
 .text-serif-style {
-  font-family: 'Cormorant SC', serif;
   font-size: 2rem;
+  font-family: "Schnyder";
+  text-transform: none;
   font-weight: 500;
+  font-size: 35px;
+  color: #2d2d2b;
+}
+
+.text-uppercase-style {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  font-size: 1.4rem;
 }
 
 .flex-column {
@@ -80,11 +118,20 @@ h3 {
   object-fit: cover;
 }
 
+.bg-img-shadow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  background-color: #170b067d;
+}
+
 //HEADER
 
-
 header {
-  z-index: 20;   /* should add position fixed in JS */
+  z-index: 20; /* should add position fixed in JS */
 }
 .nav__container {
   position: relative;
@@ -143,14 +190,14 @@ header {
             margin-right: 10px;
           }
         }
-      
+
         svg {
           position: absolute;
           left: 50%;
           top: 50%;
           transform: translate(-50%, -50%);
           width: 25px;
-          fill:$pure-white;
+          fill: $pure-white;
         }
       }
     }
@@ -178,9 +225,6 @@ header {
   justify-content: center;
 }
 
-
-
-
 .header__logo-img {
   position: absolute;
   top: -60px;
@@ -189,57 +233,10 @@ header {
   width: 270px;
   height: 270px;
 }
-
 
 .show-fixed {
   position: fixed;
 }
-
-
-/*.nav__container {
-  position: relative;
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 20px 30px;
-
-  &-list {
-    display: flex;
-    justify-content: space-between;
-    text-transform: uppercase;
-    &-item:nth-of-type(3) {
-      display: block;
-      width: 350px;
-      height: 0;
-    }
-  }
-  .flex-item {
-    position: relative;
-    top: 50px;
-    // display: none;
-  }
-
-  &-menu {
-    position: absolute;
-    top: 142px;
-    left: 50%;
-    transform: translateX(-50%);
-    .line {
-      width: 26px;
-      height: 2px;
-      background-color: #6c6c6c;
-      margin: 5px;
-    }
-  }
-}
-
-.header__logo-img {
-  position: absolute;
-  top: -60px;
-  left: 50%;
-  transform: translate(-50%);
-  width: 270px;
-  height: 270px;
-}*/
 
 // MAIN SECTION
 
@@ -254,8 +251,14 @@ header {
   justify-content: space-between;
   width: 100vw;
   max-width: 1100px;
-  &-img {
+  overflow: hidden;
+  &-box {
     width: 33%;
+    height: 250px;
+  }
+  &-img {
+    opacity: .9;
+    filter: brightness(70%);
   }
 }
 
@@ -265,20 +268,19 @@ header {
   padding: 40px 20px;
   width: 85vw;
   max-width: 540px;
-  background-color: #F0E7DE;
-  // &::after {
-  //  content: '';
-  //  position: absolute;
-  //  left: 8px;
-  //  top: 8px;
-  //  bottom: 8px;
-  //  right: 8px;
-  //  border: 1px solid #fff;
-  // }
+  background-color: #bda79e;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 8px;
+    top: 8px;
+    bottom: 8px;
+    right: 8px;
+    border: 1px solid #fff;
+  }
 
   h2 {
-    margin-bottom: 10px;
-    text-transform: uppercase;
+    margin-bottom: 30px;
     font-size: 1.8rem;
     letter-spacing: 0.2rem;
     text-align: center;
@@ -307,7 +309,7 @@ header {
     left: 10px;
     right: 10px;
     bottom: 20px;
-    background-color: #dacec5;
+    background-color: $light-brown;
     z-index: -1;
     svg {
       display: none;
@@ -326,7 +328,7 @@ header {
 
       &::after {
         position: absolute;
-        content: '';
+        content: "";
         top: -4px;
         left: -4px;
         right: -4px;
@@ -342,12 +344,12 @@ header {
 
       h2 {
         position: absolute;
-        font-family: 'Cormorant SC';
+        font-family: "Cormorant SC";
         font-size: 4rem;
         font-weight: 300;
         top: -75px;
         text-align: center;
-        letter-spacing: .3rem;
+        letter-spacing: 0.3rem;
         width: 100%;
       }
     }
@@ -371,14 +373,13 @@ header {
   }
 }
 
-
 .section-line {
   position: absolute;
   top: -130px;
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  width: .3px;
+  width: 0.3px;
   height: 110px;
   background-color: #787373;
   z-index: 6;
@@ -390,7 +391,6 @@ header {
   position: relative;
   margin: 80px 10px 30px 10px;
   padding: 50px 20px;
-  background-color: $light-pink;
   z-index: 0;
 
   &-heading {
@@ -403,6 +403,7 @@ header {
   }
 
   &-container {
+    flex-wrap: wrap;
     &-box {
       position: relative;
       width: 80vw;
@@ -418,7 +419,7 @@ header {
         width: 75%;
         text-align: center;
         padding: 20px;
-        background-color: $pure-white;
+        background-color: #6a4531;
         &::after {
           content: "";
           position: absolute;
@@ -426,12 +427,15 @@ header {
           top: 4px;
           bottom: 4px;
           right: 4px;
-          border: 1px solid #dcc8be;
+          border: 1px solid #fff;
         }
         p {
+          font-family: "Schnyder";
+          font-size: 1.6rem;
+          letter-spacing: 0.2rem;
+          font-weight: 300;
           text-transform: uppercase;
-          font-size: 1.4rem;
-          font-weight: 500;
+          color: #fff;
         }
       }
     }
@@ -440,19 +444,24 @@ header {
 
 //OPINION
 .opinion__section {
-  // background-image: url(/img/diana-polekhina-PIDlLKcFOEI-unsplash.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding: 40px 0;
+  padding: 20px 0 60px 0;
+  background-color: #bda79e;
 
   &-header {
     position: relative;
     width: 100%;
-    margin-bottom: 50px;
-    padding: 20px 0 15px 0;
+    margin: 20px auto;
     text-align: center;
-    background-color: $pure-white;
+    &::after {
+      position: absolute;
+      content: "";
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: -30px;
+      height: 1px;
+      background-color: #2d2d2b;
+      width: 80%;
+    }
 
     .opinion-quote {
       display: none;
@@ -463,107 +472,95 @@ header {
     padding: 30px 20px;
   }
 
-  .slick-prev {
-    left: -160px;
-  }
-
-  .slick-next {
-    right: -160px;
-  }
-
   .slide-arrow {
     position: absolute;
-    top: 50%;
+    bottom: -30px;
     padding: 10px;
-    width: 40px;
-    height: 40px;
-    transform: translateY(-50%);
+    cursor: pointer;
     border: transparent;
     background-color: transparent;
-    cursor: pointer;
     z-index: 1;
-
-    &:hover .carousel-arrow {
-      filter: invert(21%) sepia(46%) saturate(18%) hue-rotate(25deg)
-        brightness(100%) contrast(86%);
-    }
-  }
-
-  .slick-prev {
-    left: -10px;
-  }
-
-  .slick-next {
-    right: -10px;
-  }
-
-  .arrow-left,
-  .arrow-right {
-    filter: invert(75%) sepia(17%) saturate(113%) hue-rotate(342deg)
-      brightness(93%) contrast(90%);
+    color: #6c3218;
   }
 
   &-box {
-    &-photo {
-      width: 120px;
-      height: 120px;
-      margin: 0 auto;
-      background-size: cover;
-      background-position: center;
-      border-radius: 50%;
-      overflow: hidden;
-    }
+    // &-photo {
+    //   width: 100px;
+    //   height: 100px;
+    //   margin: 0 auto;
+    //   background-size: cover;
+    //   background-position: center;
+    //   border-radius: 50%;
+    //   overflow: hidden;
+    // }
 
-    &-img {
-      display: block;
-    }
+    // &-img {
+    //   display: block;
+    // }
 
     &-text {
       text-align: center;
       margin: 30px auto;
+      font-weight: 400;
+      font-style: italic;
+      font-size: 2.1rem;
     }
 
     &-signature {
-      text-align: right;
-      font-size: 1.1rem;
-      font-weight: 500;
+      text-align: center;
     }
   }
 }
 
 .contact__section {
-  padding: 0 0 50px 0;
   background-color: $light-pink;
+  height: 600px;
+
   &-container {
     position: relative;
-    &-photo {
-      width: 100%;
-      height: 400px;
-    }
+    width: 100%;
+    height: 100%;
 
+    // .contact-shadow {
+    //   position: absolute;
+    //   width: 100%;
+    //   height: 100%;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: 0;
+    //   background-color: #170b067d;
+    // }
+
+    video {
+      display: none;
+    }
     &-form {
-      position: relative;
-      top: -100px;
+      position: absolute;
       padding: 35px;
       width: 85vw;
       max-width: 320px;
-      background-color: $pure-white;
 
-      h4 {
+      h2 {
         margin-bottom: 20px;
+        color: #fff;
       }
 
       p {
         width: auto;
         text-align: center;
         margin-bottom: 20px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 1.5rem;
+        line-height: 1.8;
       }
+
       input {
         width: 130%;
         padding: 10px;
         margin-bottom: 15px;
         text-align: center;
-        font-family: 'Cormorant';
+        font-family: "Cormorant";
         text-transform: uppercase;
       }
       button {
@@ -583,11 +580,13 @@ header {
 
 .footer {
   padding: 15px;
-  background-color: #856A5D;
+  background-color: #856a5d;
   -webkit-transition: bottom 0.2s ease-in-out;
   transition: bottom 0.2s ease-in-out;
 
-  a, p, span {
+  a,
+  p,
+  span {
     color: #fff;
     letter-spacing: 0.2rem;
     text-decoration: none;

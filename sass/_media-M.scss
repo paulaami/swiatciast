@@ -33,6 +33,12 @@
   .main__section {
     &-container {
       margin-top: 130px;
+      &-box {
+        height: 480px;
+      }
+      &-box:nth-of-type(2) {
+        height: 500px;
+      }
     }
   }
 
@@ -90,10 +96,10 @@
     &-container {
       flex-direction: row;
       justify-content: space-between;
-      width: 740px;
+      width: 650px;
 
       &-box {
-        max-width: 32%;
+        width: 50%;
 
         .offer-text {
           width: 80%;
@@ -147,6 +153,18 @@
       right: -40px;
     }
   }
+
+  .contact__section {
+    &-container {
+      img {
+        display: none;
+      }
+      video {
+        display: block;
+      }
+    }
+  }
+
 
   .footer__container {
     margin: 0 auto;

@@ -228,4 +228,12 @@
       font-size: 1.1rem;
     }
   }
+
+  .section__gallery {
+    &-container {
+      &-img {
+        width: 33%;
+      }
+    }
+  }
 }

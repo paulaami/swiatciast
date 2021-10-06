@@ -1,0 +1,177 @@
+.offer__one {
+ padding: 60px 0;
+ margin-top: 150px;
+ background-color: #E3D6C7;
+
+ h2 {
+  text-align: center;
+ }
+
+ &-container {
+  margin: 0 auto;
+  width: 80vw;
+
+  &-left {
+   p {
+    text-align: center;
+   }
+  }
+
+  &-right {
+   &-desc {
+    display: flex;
+
+    p {
+     text-align: left;
+    }
+
+    img {
+     display: block;
+     align-self: flex-start;
+     width: 35px;
+     height: auto;
+    }
+   }
+  }
+
+ }
+}
+
+.offer__price {
+ padding: 60px 0;
+ background-color: #EEE7E2;
+
+ &-container {
+  margin: 0 auto;
+  width: 80vw;
+
+  &-text {
+   margin: 0 auto;
+   margin-bottom: 40px;
+
+   h3 {
+    font-family: 'Montserrat', sans-serif;
+   }
+  }
+
+  &-table {
+   margin: 0 auto;
+   h3 {
+    text-align: center;
+   }
+
+   table {
+    margin: 0 auto;
+    tr {
+     text-align: center;
+    }
+   }
+  }
+ }
+}
+
+.section__gallery {
+ padding: 60px 0;
+
+ &-container {
+  margin: 0 auto;
+  max-width: 1000px;
+
+  &-box {
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+  }
+
+
+  &-img {
+   position: relative;
+   width: 100%;
+   height: 250px;
+   padding: 7px;
+
+   &:hover img {
+    transform: scale(1.1);
+   }
+
+   img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .4s ease;
+   }
+
+   span {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+   }
+
+  }
+ }
+
+ &-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80vw;
+  max-width: 700px;
+  z-index: 5;
+  border: 5px solid #fff;
+
+  &-details {
+   position: relative;
+   display: flex;
+   align-items: center;
+   height: 30px;
+   justify-content: center;
+   background-color: #fff;
+  }
+
+  &-text {
+   text-align: center;
+   font-size: 1.6rem;
+  }
+
+  &-close {
+   position: absolute;
+   right: 0;
+   width: 30px;
+   height: 30px;
+   img {
+    width: 100%;
+   }
+  }
+
+  &-box {
+   position: relative;
+   display: flex;
+   width: 100%;
+
+   .slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    img {
+     width: 25px;
+    }
+   }
+
+   .prev {
+    left: 0;
+   }
+
+   .next {
+    right: 0;
+   }
+
+   .box-img {
+    width: 100%;
+    object-fit: cover;
+   }
+  }
+ }
+}

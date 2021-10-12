@@ -30,7 +30,8 @@ html {
 
 body {
   font-family: "Cormorant", serif;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
+  line-height: 1.6;
   overflow-x: hidden;
   color: $main-gray;
 }
@@ -47,15 +48,17 @@ ul {
 h3 {
   font-family: "Quentin";
   font-size: 3.5rem;
+  line-height: 1.2;
 }
 
 h2,
 h1 {
   font-family: "Schnyder", serif;
-  font-size: 2.8rem;
+  font-size: 3rem;
   text-transform: none;
   font-weight: 400;
   letter-spacing: 0.1rem;
+  line-height: 1.2;
 }
 
 h3 {
@@ -78,7 +81,7 @@ h3 {
   background-color: $dark-brown; /*#463938*/
   // border: 1px solid $main-gray https://mycolor.space/?hex=%23F0E7DE&sub=1;
   color: $pure-white;
-  border: 1px solid #2d2d2b;
+  // border: 1px solid #2d2d2b;
 }
 
 .text-style {
@@ -101,7 +104,7 @@ h3 {
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.2rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   margin-bottom: 5px;
   text-align: center;
 }
@@ -292,8 +295,6 @@ header {
     position: absolute;
     top: 0;
     left: 0;
-    opacity: 0.9;
-    filter: brightness(50%);
   }
 
   &-img:nth-last-of-type(1) {

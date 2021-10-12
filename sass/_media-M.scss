@@ -236,4 +236,18 @@
       }
     }
   }
+
+  /*TORTY*/
+  .offer__one {
+    p {
+      text-align: center;
+    }
+    &-container {
+      &-right {
+        p {
+          text-align: justify;
+        }
+      }
+    }
+  }
 }

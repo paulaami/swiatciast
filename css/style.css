@@ -1167,7 +1167,7 @@ header {
   .nav__container-menu {
     top: 165px;
   }
-  .offer__one {
+  .offer__one, .main__section-container {
     margin-top: 165px;
   }
   .main__section-container-box {

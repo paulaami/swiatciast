@@ -1,4 +1,17 @@
 @media screen and (min-width: 375px) {
+  .header__logo-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .nav__container-menu {
+    top: 165px;
+  }
+
+  .offer__one {
+    margin-top: 165px;
+  }
+
   .main__section-container {
     &-box {
       height: 250px;
@@ -33,7 +46,6 @@
     }
   }
 }
-
 
 @media screen and (min-width: 414px) {
   .main__section-container {

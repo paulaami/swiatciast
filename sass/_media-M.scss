@@ -1,4 +1,12 @@
 @media screen and (min-width: 768px) {
+  .handwritten {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+  
   .nav__container {
     .flex-item {
       display: block;
@@ -239,6 +247,13 @@
 
   /*TORTY*/
   .offer__one {
+    margin-top: 130px;
+
+    h2 { 
+      max-width: 580px;
+      margin: 0 auto;
+      margin-bottom: 40px;
+    }
     p {
       text-align: center;
     }
@@ -247,7 +262,14 @@
         p {
           text-align: justify;
         }
+        .text-uppercase-style {
+          text-align: center;
+        }
       }
     }
+  }
+
+  table th {
+    width: 160px;
   }
 }

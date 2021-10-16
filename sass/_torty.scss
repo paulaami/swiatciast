@@ -1,11 +1,22 @@
+.handwritten {
+  font-family: 'Denmark';
+  font-size: 3.5rem;
+  font-weight: 300;
+}
 .offer__one {
   padding: 80px 0 100px 0;
   margin-top: 150px;
   background-color: #e3d6c7;
 
+  span {
+    font-weight: 600;
+    font-style: italic;
+  }
+
   h2 {
     text-align: center;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    color:#855743;
   }
 
   &-container {
@@ -16,9 +27,15 @@
     &-left {
       margin: 0 auto;
       margin-bottom: 100px;
+      max-width: 700px;
       p {
         text-align: center;
         margin-bottom: 10px;
+      }
+
+      .price-link {
+        color: #855743;
+        text-decoration: underline;
       }
       a.button-style {
         display: block;
@@ -43,6 +60,7 @@
 
       .right {
         width: 80%;
+        max-width: 500px;
       }
 
       .left {
@@ -67,9 +85,10 @@
       h2 {
         text-transform: uppercase;
         font-weight: 600;
-        font-size: 30px;
+        font-size: 3rem;
         color: #bda79e;
         letter-spacing: 0.3rem;
+        line-height: 1.5;
       }
       &-desc {
         display: flex;
@@ -196,9 +215,15 @@
   padding: 80px 0;
   width: 80vw;
 
+  h1 {
+    font-family: 'Denmark';
+    text-align: center;
+    margin-bottom: 20px;
+  }
   h2 {
     text-align: center;
     margin-bottom: 80px;
+    color: #855743;
   }
 
   &-container {

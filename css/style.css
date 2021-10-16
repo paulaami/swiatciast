@@ -28,7 +28,7 @@ html {
 
 body {
   font-family: "Cormorant", serif;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.6;
   overflow-x: hidden;
   color: #2d2d2b;
@@ -670,7 +670,7 @@ header {
   position: absolute;
   padding: 35px;
   width: 90vw;
-  max-width: 320px;
+  max-width: 400px;
 }
 
 .contact__section-container-form h2 {
@@ -781,15 +781,27 @@ header {
   font-weight: 300;
 }
 
+.handwritten {
+  font-family: 'Denmark';
+  font-size: 3.5rem;
+  font-weight: 300;
+}
+
 .offer__one {
   padding: 80px 0 100px 0;
   margin-top: 150px;
   background-color: #e3d6c7;
 }
 
+.offer__one span {
+  font-weight: 600;
+  font-style: italic;
+}
+
 .offer__one h2 {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
+  color: #855743;
 }
 
 .offer__one-container {
@@ -801,11 +813,17 @@ header {
 .offer__one-container-left {
   margin: 0 auto;
   margin-bottom: 100px;
+  max-width: 700px;
 }
 
 .offer__one-container-left p {
   text-align: center;
   margin-bottom: 10px;
+}
+
+.offer__one-container-left .price-link {
+  color: #855743;
+  text-decoration: underline;
 }
 
 .offer__one-container-left a.button-style {
@@ -841,6 +859,7 @@ header {
 
 .offer__one-container-right .right {
   width: 80%;
+  max-width: 500px;
 }
 
 .offer__one-container-right .left {
@@ -867,9 +886,10 @@ header {
 .offer__one-container-right h2 {
   text-transform: uppercase;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 3rem;
   color: #bda79e;
   letter-spacing: 0.3rem;
+  line-height: 1.5;
 }
 
 .offer__one-container-right-desc {
@@ -1005,9 +1025,16 @@ header {
   width: 80vw;
 }
 
+.section__gallery h1 {
+  font-family: 'Denmark';
+  text-align: center;
+  margin-bottom: 20px;
+}
+
 .section__gallery h2 {
   text-align: center;
   margin-bottom: 80px;
+  color: #855743;
 }
 
 .section__gallery-container {
@@ -1159,6 +1186,69 @@ header {
   background: rgba(0, 0, 0, 0.6);
 }
 
+.offer__price-container-box {
+  margin-bottom: 60px;
+}
+
+.offer__price .handwritten {
+  position: relative;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.offer__price .handwritten::after, .offer__price .handwritten::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 60px;
+  height: .7px;
+  background-color: #2d2d2b;
+}
+
+.offer__price .handwritten::before {
+  left: 0;
+}
+
+.offer__price .handwritten::after {
+  right: 0;
+}
+
+.offer__price h2 {
+  text-align: center;
+  color: #855743;
+  margin-bottom: 10px;
+}
+
+.offer__price .text-uppercase-style {
+  margin-bottom: 40px;
+  font-size: 1.2rem;
+}
+
+.offer__price ol li {
+  list-style-position: inside;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.offer__price .box-price {
+  position: relative;
+  color: #995c41;
+  text-align: right;
+  margin-bottom: 30px;
+}
+
+.offer__price .box-price::after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -10px;
+  width: 100%;
+  height: .7px;
+  background-color: #2d2d2b;
+}
+
 @media screen and (min-width: 375px) {
   .header__logo-img {
     width: 300px;
@@ -1223,6 +1313,12 @@ header {
 }
 
 @media screen and (min-width: 768px) {
+  .handwritten {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
   .nav__container .flex-item {
     display: block;
     position: relative;
@@ -1401,11 +1497,25 @@ header {
     width: 33%;
   }
   /*TORTY*/
+  .offer__one {
+    margin-top: 130px;
+  }
+  .offer__one h2 {
+    max-width: 580px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
   .offer__one p {
     text-align: center;
   }
   .offer__one-container-right p {
     text-align: justify;
+  }
+  .offer__one-container-right .text-uppercase-style {
+    text-align: center;
+  }
+  table th {
+    width: 160px;
   }
 }
 
@@ -1465,6 +1575,12 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  body {
+    font-size: 1.8rem;
+  }
+  h2 {
+    font-size: 4rem;
+  }
   .main__section-container-box {
     height: 580px;
   }
@@ -1505,13 +1621,20 @@ header {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    max-width: 900px;
+    max-width: 1100px;
   }
   .offer__price-container-text {
     width: 40%;
+    margin-bottom: 0;
   }
   .offer__price-container-table {
-    width: 50%;
+    width: 40%;
+    left: auto;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .offer__one h2 {
+    font-size: 4rem;
   }
   .offer__one-right {
     -webkit-box-orient: horizontal;

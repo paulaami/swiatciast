@@ -64,6 +64,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+
+  body {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
   .main__section {
     &-container {
       &-box {
@@ -113,18 +122,24 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      max-width: 900px;
+      max-width: 1100px;
       &-text {
         width: 40%;
+        margin-bottom: 0;
       }
 
       &-table {
-        width: 50%;
+        width: 40%;
+        left: auto;
+        transform: none;
       }
     }
   }
 
   .offer__one {
+    h2 {
+      font-size: 4rem;
+    }
     &-right {
       flex-direction: row;
       justify-content: space-between;

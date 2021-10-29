@@ -24,6 +24,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -926,7 +927,24 @@ header {
   position: relative;
   margin: 0 auto;
   width: 80vw;
-  max-width: 450px;
+  max-width: 700px;
+}
+
+.offer__price-container-menu {
+  width: 100%;
+}
+
+.offer__price-container-menu p {
+  margin-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.offer__price-container-menu a {
+  color: #855743;
+}
+
+.offer__price-container-menu a:hover {
+  text-decoration: underline;
 }
 
 .offer__price-container-title {
@@ -1188,18 +1206,22 @@ header {
 
 .offer__price .handwritten {
   position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-width: 300px;
   text-align: center;
   margin-bottom: 50px;
 }
 
 .offer__price .handwritten::after, .offer__price .handwritten::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 60px;
-  height: .7px;
+  width: 70px;
+  height: 0.7px;
   background-color: #2d2d2b;
 }
 
@@ -1224,7 +1246,7 @@ header {
 
 .offer__price ol li {
   list-style-position: inside;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
 
@@ -1237,11 +1259,11 @@ header {
 
 .offer__price .box-price::after {
   position: absolute;
-  content: '';
+  content: "";
   left: 0;
   bottom: -10px;
   width: 100%;
-  height: .7px;
+  height: 0.7px;
   background-color: #2d2d2b;
 }
 

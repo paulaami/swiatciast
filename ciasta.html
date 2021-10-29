@@ -68,9 +68,9 @@
           consequuntur, saepe quam.
         </p>
         <p>
-          Poniższy <span><a class="price-link" href="">cennik</a></span> dotyczy...
+          Poniższy <span><a class="price-link" href="#price">cennik</a></span> dotyczy...
         </p>
-        <a class="button-style">Przejdź do oferty</a>
+        <a href="#price" class="button-style">Przejdź do oferty</a>
       </div>
       <div class="offer__one-container-right">
         <!-- <h2>Co mnie wyróżnia?</h2> -->
@@ -125,8 +125,19 @@
 
   <section class="offer__price offer__cookies">
     <div class="offer__price-container">
-      <h3 class="handwritten">Cennik</h3>
-      <h2>Ciasta</h2>
+      <h3 id="price" class="handwritten">Cennik</h3>
+      <div class="offer__price-container-menu">
+        <p>Przejdź szybko do...</p>
+        <ul>
+          <li><a href="#ciasta">Ciasta</a></li>
+          <li><a href="#weganskie">Ciasta wegańskie</a></li>
+          <li><a href="#serniki">Serniki</a></li>
+          <li><a href="#tarty">Tarty</a></li>
+          <li><a href="#tartaletki">Tartaletki</a></li>
+        </ul>
+      </div>
+
+      <h2 id="ciasta">Ciasta</h2>
       <p class="text-uppercase-style">ciasta mają średnicę 26 cm</p>
       <div class="offer__price-container-box">
         <ol>
@@ -154,7 +165,7 @@
         </ol>
       </div>
 
-      <h2>Ciasta wegańskie / Bez laktozy / Bez glutenu</h2>
+      <h2 id="weganskie">Ciasta wegańskie / Bez laktozy / Bez glutenu</h2>
       <p class="text-uppercase-style">Bez cukru, bez glutenu, wegańskie</p>
       <div class="offer__price-container-box">
         <ol>
@@ -209,7 +220,7 @@
         </ol>
       </div>
 
-      <h2>Serniki</h2>
+      <h2 id="serniki">Serniki</h2>
       <p class="text-uppercase-style">serniki mają średnicę 26 cm</p>
 
       <div class="offer__price-container-box">
@@ -259,7 +270,7 @@
 
       </div>
 
-      <h2>Tarty</h2>
+      <h2 id="tarty">Tarty</h2>
       <p class="text-uppercase-style">tarty mają średnicę 25 cm</p>
 
       <div class="offer__price-container-box">
@@ -295,7 +306,7 @@
         </ol>
       </div>
 
-      <h2>Tartaletki</h2>
+      <h2 id="tartaletki">Tartaletki</h2>
       <p class="text-uppercase-style">minimalne zamówienie 10 sztuk</p>
 
       <div class="offer__price-container-box">
@@ -330,7 +341,7 @@
       </div>
 
     </div>
-    <a class="button-style">Złóż zamówienie</a>
+    <a href="#order" class="button-style">Złóż zamówienie</a>
   </section>
 
   <section class="section__gallery">
@@ -405,7 +416,7 @@
 
   <div class="shadow"></div>
 
-  <section class="contact__section">
+  <section class="contact__section" id="order">
     <div class="contact__section-container flex-column">
       <div class="bg-img-shadow"></div>
       <img src="./img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">

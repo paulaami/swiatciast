@@ -63,7 +63,6 @@
 }
 
 @media screen and (min-width: 1200px) {
-
   body {
     font-size: 1.8rem;
   }
@@ -117,6 +116,15 @@
     }
   }
 
+  /*torty*/
+
+  .offer__cake {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
   .offer__price {
     &-container {
       &-text {

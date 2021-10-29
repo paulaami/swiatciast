@@ -63,7 +63,7 @@ h3 {
   display: block;
   padding: 15px;
   width: 100%;
-  max-width: 250px;
+  max-width: 300px;
   text-align: center;
   font-size: 1.2rem;
   font-family: "Montserrat", sans-serif;
@@ -1553,7 +1553,7 @@ header {
 }
 
 /*CIASTA*/
-.offer__price-container {
+.offer__cookies {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -1651,6 +1651,17 @@ header {
   }
   .offer__section-container-box {
     height: 440px;
+  }
+  /*torty*/
+  .offer__cake {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
   }
   .offer__price-container-text {
     width: 40%;

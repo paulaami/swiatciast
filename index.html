@@ -1,75 +1,68 @@
 <!DOCTYPE html>
 <html lang="pl">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Słodki Świat Ciast</title>
-		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-		<link
-			rel="stylesheet"
-			type="text/css"
-			href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
-		/>
 
-		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+SC:wght@300;400;500&&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="css/style.css" />
-	</head>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Słodki Świat Ciast</title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
-	<body>
-		<header>
-			<nav class="nav__container">
-				<ul class="nav__container-list">
-					<li class="nav__container-list-item flex-item">home</li>
-					<li class="nav__container-list-item flex-item">o mnie</li>
-					<li class="nav__container-list-item">
-						<img
-							class="header__logo-img fixed-item"
-							src="./svg/slodkiswiatciast.svg"
-							alt="Logo Slodki Swiat Ciast"
-						/>
-					</li>
-					<li class="nav__container-list-item flex-item">oferta</li>
-					<li class="nav__container-list-item flex-item">kontakt</li>
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,500;1,400;1,500&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+SC:wght@300;400;500&&display=swap"
+		rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+	<header>
+		<nav class="nav__container">
+			<ul class="nav__container-list">
+				<li class="nav__container-list-item flex-item">home</li>
+				<li class="nav__container-list-item flex-item">o mnie</li>
+				<li class="nav__container-list-item">
+					<img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg" alt="Logo Slodki Swiat Ciast" />
+				</li>
+				<li class="nav__container-list-item flex-item">oferta</li>
+				<li class="nav__container-list-item flex-item">kontakt</li>
+			</ul>
+			<div class="nav__container-menu fixed-item">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="nav__container-menu-mobile">
+				<ul>
+					<li><a href="">home</a></li>
+					<li><a href="">o mnie</a></li>
+					<li><a href="">oferta</a></li>
+					<li><a href="">kontakt</a></li>
 				</ul>
-				<div class="nav__container-menu fixed-item">
-					<div class="line"></div>
-					<div class="line"></div>
-					<div class="line"></div>
+				<div class="nav__container-menu-mobile-social">
+					<a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<circle cx="256" cy="255.833" r="80"></circle>
+							<path
+								d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
+							</path>
+						</svg></a>
+					<a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+							<path
+								d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
+							</path>
+						</svg></a>
 				</div>
-				<div class="nav__container-menu-mobile">
-					<ul>
-						<li><a href="">home</a></li>
-						<li><a href="">o mnie</a></li>
-						<li><a href="">oferta</a></li>
-						<li><a href="">kontakt</a></li>
-					</ul>
-          <div class="nav__container-menu-mobile-social">
-            <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <circle cx="256" cy="255.833" r="80"></circle>
-              <path d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z"></path></svg></a>
-              <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                <path d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z"></path></svg></a>
-          </div>
-				</div>
-			</nav>
-		</header>
+			</div>
+		</nav>
+	</header>
 
-		<section class="main__section flex-column">
-			<div class="main__section-container">
-				<div class="main__section-container-box"><img
-					src="./img/Slice2.jpg"
-					alt="zdjęcie tortu"
-					class="main__section-container-img image-style"
-				/><img
-				src="./img/Slice6.jpg"
-				alt="zdjęcie tortu"
-				class="main__section-container-img image-style"
-			/>  <div class="main__section-container-box-text">
+	<section class="main__section flex-column">
+		<div class="main__section-container">
+			<div class="main__section-container-box"><img src="./img/Slice2.jpg" alt="zdjęcie tortu"
+					class="main__section-container-img image-style" /><img src="./img/Slice6.jpg" alt="zdjęcie tortu"
+					class="main__section-container-img image-style" />
+				<div class="main__section-container-box-text">
 					<ul>
 						<li><a href="torty.html">Torty</a></li>
 						<li>Ciasta</li>
@@ -78,172 +71,175 @@
 					</ul>
 				</div>
 			</div>
-				<div class="main__section-container-box"><img
-					src="./img/Slice3.jpg"
-					alt="zdjęcie trzech tortów"
-					class="main__section-container-img image-style"
-				/><img
-				src="./img/Slice5.jpg"
-				alt="zdjęcie tortu"
-				class="main__section-container-img image-style"
-			/> </div>
-				<div class="main__section-container-box"><img
-					src="./img/Slice4.jpg"
-					alt="zdjęcie ciasta"
-					class="main__section-container-img image-style"
-				/><img
-				src="./img/Slice7.jpg"
-				alt="zdjęcie tortu"
-				class="main__section-container-img image-style"
-			/>  <h3 class="main__section-container-box-heading">Zobacz Ofertę</h3>
+			<div class="main__section-container-box"><img src="./img/Slice3.jpg" alt="zdjęcie trzech tortów"
+					class="main__section-container-img image-style" /><img src="./img/Slice5.jpg" alt="zdjęcie tortu"
+					class="main__section-container-img image-style" /> </div>
+			<div class="main__section-container-box"><img src="./img/Slice4.jpg" alt="zdjęcie ciasta"
+					class="main__section-container-img image-style" /><img src="./img/Slice7.jpg" alt="zdjęcie tortu"
+					class="main__section-container-img image-style" />
+				<h3 class="main__section-container-box-heading">Zobacz Ofertę</h3>
 			</div>
-			</div>
-			<div class="main__section-box flex-column">
-				<!-- <h2 class="text-serif-style">Z miłości do pieczenia</h2> -->
+		</div>
+		<!-- <div class="main__section-box flex-column">
+				 <h2 class="text-serif-style">Z miłości do pieczenia</h2> 
 				<p class="main__section-box-text text-style">
 					Najlepsze ciasta, naturalne składniki, torty na różne okazje...
 				</p>
 				<a class="main__section-box-link button-style" href="torty.html"
 					>zobacz ofertę</a
 				>
-			</div>
-		</section>
+			</div> -->
+	</section>
 
-		<section class="about__section">
-			<p class="text-uppercase-style">kim jestem?</p>
-			<h2 class="about__section-container-heading">Kilka słów o mnie</h2>
-			<div class="about__section-container flex-column">
-				<div class="about__section-container-photo">
-					<img
-						class="image-style"
-						src="./img/236983064_831097744432851_7213063889319723144_n.jpg"
-						alt=""
-					/>
+	<section class="offer__section flex-column">
+		<!-- <div class="section-line"></div> -->
+		<p class="text-uppercase-style">miło cię widzieć</p>
+		<h1 class="offer__section-heading">Zapoznaj się z moją ofertą</h1>
+		<div class="offer__section-description">
+			<p>
+				Świeże wypieki tworzone z sercem, tylko z naturalnych składników.
+			</p>
+		</div>
+		<div class="offer__section-container flex-column">
+			<div class="offer__section-container-box offer-one">
+				<img class="image-style" src="./img/triple-cake-s.jpg" alt="" />
+				<div class="offer__section-container-box-text">
+					<p>Torty artystyczne oraz wykonywane na specjalne okazje.</p>
 				</div>
-				<div class="about__section-container-text">
-					<h3>Witajcie!</h3>
-					<p class="text-serif-style">Nazywam się Renata.</p>
-					<p class="text-style">
-						Tu jest miejsce na moją krótką historię, o pasji do robienia ciast i
-						zaproszenie do rozgoszczenia się .... coś takiego ;) jeśli masz
-						pytania.. to napisz do mnie .. Złóż zamówienie przez formularz...
-						Cokolwiek chcesz można tu umieścićblanditiis. Tenetur fugit sit quo
-						consectetur quasi, facilis praesentium.
+				<div class="offer-text">
+					<p><a href="torty.html">Torty &#8594;</a></p>
+				</div>
+			</div>
+			<div class="offer__section-container-box offer-two">
+				<img class="image-style" src="./img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg" alt="" />
+				<div class="offer__section-container-box-text">
+					<p>Ciasta wegańskie, serniki, tarty, tartaletki</p>
+				</div>
+				<div class="offer-text">
+					<p>Ciasta &#8594;</p>
+				</div>
+			</div>
+			<div class="offer__section-container-box offer-three">
+				<img class="image-style" src="./img/meghan-rodgers-QpeoWEazLlM-unsplash.jpg" alt="" />
+				<div class="offer__section-container-box-text">
+					<p>Mini słodycze podane w wersji Finger Food. Wspaniała atrakcja weselna, komunijna, urodzinowa lub imprezowa.
 					</p>
-					<a class="button-style" href="torty.html">Napisz do mnie</a>
+				</div>
+				<div class="offer-text">
+					<p>Candy bar &#8594;</p>
 				</div>
 			</div>
-		</section>
-		<section class="offer__section flex-column">
-			<div class="section-line"></div>
-			<p class="text-uppercase-style">Co piekę?</p>
-			<h1 class="offer__section-heading">Zapoznaj się z moją ofertą</h1>
-			<div class="offer__section-description">
-				<p>
-					Tutaj kilka słów o ofercie. W skrócie co się znaduje - zachęta do zapoznania się z ofertą. Czekam
-					na pomysły i info co umieścić w tym miejscu i jak przedstawić ofertę.
-				</p></div>
-			<div class="offer__section-container flex-column">
-				<div class="offer__section-container-box offer-one">
-					<img
-						class="image-style"
-						src="./img/triple-cake-s.jpg"
-						alt=""
-					/> <div class="offer__section-container-box-text"><p>Torty artystyczne oraz wykonywane na specjalne okazje.</p>
-				 </div>
-					<div class="offer-text"><p><a href="torty.html">Torty &#8594;</a></p></div>
+			<div class="offer__section-container-box offer-four">
+				<img class="image-style" src="./img/lore-schodts-FIxdY7jOBus-unsplash.jpg" alt="" />
+				<div class="offer__section-container-box-text">
+					<p>Eleganckie ciastka - desery. Piękne uzupełnienie słodkiego stołu i wyjątkowa niespodzianka dla gości.</p>
 				</div>
-				<div class="offer__section-container-box offer-two">
-					<img
-						class="image-style"
-						src="./img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg"
-						alt=""
-					/>
-					<div class="offer__section-container-box-text"><p>Różne rodzaje ciast - serniki, tarty, tartaletki</p>
-						</div>
-					<div class="offer-text"><p>Ciasta &#8594;</p></div>
-				</div>
-				<div class="offer__section-container-box offer-three">
-					<img
-						class="image-style"
-						src="./img/meghan-rodgers-QpeoWEazLlM-unsplash.jpg"
-						alt=""
-					/><div class="offer__section-container-box-text"><p>Mini słodycze podane w wersji Finger Food. Wspaniała atrakcja weselna, komunijna, urodzinowa lub imprezowa.</p>
-						 </div>
-					<div class="offer-text"><p>Candy bar &#8594;</p></div>
-				</div>
-				<div class="offer__section-container-box offer-four">
-					<img
-						class="image-style"
-						src="./img/lore-schodts-FIxdY7jOBus-unsplash.jpg"
-						alt=""
-					/><div class="offer__section-container-box-text"><p>Eleganckie ciastka - desery składające się z kilku warstw. Piękne uzupełnienie słodkiego stołu i wyjątkowa niespodzianka dla gości.</p>
-						 </div>
-					<div class="offer-text"><p>Monoporcje &#8594;</p></div>
+				<div class="offer-text">
+					<p>Monoporcje &#8594;</p>
 				</div>
 			</div>
+		</div>
 
-		</section>
+	</section>
 
-		<section class="opinion__section">
-			<div class="opinion__section-header">
-				<h2 class="text-uppercase-style">Opinie moich klientów</h2>
-				<img class="opinion-quote" src="./svg/111116_quote_icon.svg" alt="" />
+	<section class="about__section">
+		<div class="section-line"></div>
+		<p class="text-uppercase-style">kim jestem?</p>
+		<h2 class="about__section-container-heading">Kilka słów o mnie</h2>
+		<div class="about__section-container flex-column">
+			<div class="about__section-container-photo">
+				<img class="image-style" src="./img/236983064_831097744432851_7213063889319723144_n.jpg" alt="" />
 			</div>
+			<div class="about__section-container-text">
+				<h3>Witajcie!</h3>
+				<p class="text-serif-style">Nazywam się Renata.</p>
+				<p class="text-style">
+					Moja tortowa przygoda rozpoczęła się 2 lata temu, przy okazji zamówienia tortu urodzinowego, z którego nie
+					byłam zadowolona.
+					Postanowiłam spróbować swoich sił przy kolejnej uroczystości rodzinnej , co przerodziło się w <span>pasję i miłość</span>
+					do wypieków od tortów, po ciasta, ciasteczka i różnego rodzaju desery.
+				</p>
+				<p class="text-style text-two">W <span>dbałości o każdy detal</span> przy realizacji zamówień, podążam za nowymi trendami,
+					cały czas
+					szkole się na
+					szkoleniach związanych z branżą cukierniczą, poznaje <span>nowe techniki i metody</span>, które przenoszę na torty, aby
+					móc spełnić Wasze słodkie marzenia.
+					Tak powstała pracownia <span>Słodki Świat Ciast</span>. </p>
+			</div>
+		</div>
+		<div class="about__section-bottom">
+			<p class="text-style">Naszym priorytetem jest stawianie na produkty
+				<span>wysokiej jakości</span>, które zadowolą najbardziej wymagające podniebienie, a efektem ubocznym będą wypieki, cieszące
+				oko każdego Klienta.
+				Zapewnimy słodką oprawę każdej imprezy rodzinnej w postaci Słodkich stołów i tortów.
+			</p>
+			<a class="button-style" href="torty.html">Złóż zamówienie</a>
+		</div>
+	</section>
 
-			<div class="opinion__section-container carousel">
-				<div class="opinion__section-box">
-					<!-- <div class="opinion__section-box-photo">
+
+	<section class="opinion__section">
+		<div class="opinion__section-header">
+			<h2 class="text-uppercase-style">Opinie moich klientów</h2>
+			<img class="opinion-quote" src="./svg/111116_quote_icon.svg" alt="" />
+		</div>
+
+		<div class="opinion__section-container carousel">
+			<div class="opinion__section-box">
+				<!-- <div class="opinion__section-box-photo">
 						<img
 							class="opinion__section-box-img image-style"
 							src="./img/KarolinaS.jpg"
 							alt="Zdjęcie podopiecznej Karoliny S."
 						/>
 					</div> -->
-					<p class="opinion__section-box-text text-serif-style">
-						"Polecamy z czystym sumieniem! Pracownia wywiązała się w każdym detalu, począwszy od wycen tortów, dogrywanie szczegółów, przez samo wykonanie (dzieło sztuki), po sam smak! Pycha!"
-					</p>
-					<p class="opinion__section-box-signature text-uppercase-style">- Karolina S.</p>
-				</div>
+				<p class="opinion__section-box-text text-serif-style">
+					"Polecamy z czystym sumieniem! Pracownia wywiązała się w każdym detalu, począwszy od wycen tortów, dogrywanie
+					szczegółów, przez samo wykonanie (dzieło sztuki), po sam smak! Pycha!"
+				</p>
+				<p class="opinion__section-box-signature text-uppercase-style">- Karolina S.</p>
+			</div>
 
-				<div class="opinion__section-box">
-					<!-- <div class="opinion__section-box-photo">
+			<div class="opinion__section-box">
+				<!-- <div class="opinion__section-box-photo">
 						<img
 							class="opinion__section-box-img image-style"
 							src="./img/Marta P.jpg"
 							alt="Zdjęcie podopiecznej Zosi K."
 						/>
 					</div> -->
-					<p class="opinion__section-box-text text-serif-style">"Dziękuję za uszczęśliwienie mojego syna. Ciasto było piękne i pyszne. Goście zjedli wszystko, co do ostatniego okruszka. Gorąco polecam!"
-					</p>
-					<p class="opinion__section-box-signature text-uppercase-style">- Marta P.</p>
-				</div>
+				<p class="opinion__section-box-text text-serif-style">"Dziękuję za uszczęśliwienie mojego syna. Ciasto było
+					piękne i pyszne. Goście zjedli wszystko, co do ostatniego okruszka. Gorąco polecam!"
+				</p>
+				<p class="opinion__section-box-signature text-uppercase-style">- Marta P.</p>
+			</div>
 
-				<div class="opinion__section-box">
-					<!-- <div class="opinion__section-box-photo photo-three">
+			<div class="opinion__section-box">
+				<!-- <div class="opinion__section-box-photo photo-three">
 						<img
 							class="opinion__section-box-img image-style"
 							src="./img/AnnaK.jpg"
 							alt="Zdjęcie podopiecznej Pauliny R."
 						/>
 					</div> -->
-					<p class="opinion__section-box-text text-serif-style">
-						"Tort zamawiałam pierwszy raz. Okazał się strzałem w 10! Tort przepyszny i przepiękny. Goście zachwyceni, wszystkim smakowało. Bardzo bardzo polecam!"
-					</p>
-					<p class="opinion__section-box-signature text-uppercase-style">- Anna K.</p>
-				</div>
+				<p class="opinion__section-box-text text-serif-style">
+					"Tort zamawiałam pierwszy raz. Okazał się strzałem w 10! Tort przepyszny i przepiękny. Goście zachwyceni,
+					wszystkim smakowało. Bardzo bardzo polecam!"
+				</p>
+				<p class="opinion__section-box-signature text-uppercase-style">- Anna K.</p>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<section class="contact__section">
-			<div class="contact__section-container flex-column">
-				<div class="bg-img-shadow"></div>
-					<img src="/img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
-					<video autoplay loop muted class="image-style">
-						<source src="/video/cake-design.mp4" type="video/mp4">
-					</video>
-				<div class="contact__section-container-form flex-column">
-					<h2>Złóż zamówienie</h4>
+	<section class="contact__section">
+		<div class="contact__section-container flex-column">
+			<div class="bg-img-shadow"></div>
+			<img src="/img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
+			<video autoplay loop muted class="image-style">
+				<source src="/video/cake-design.mp4" type="video/mp4">
+			</video>
+			<div class="contact__section-container-form flex-column">
+				<h2>Złóż zamówienie</h4>
 					<p>
 						Wystarczy wypełnić poniższy formularz podając w treści wiadomości
 						wybrane zamówienie.
@@ -253,67 +249,40 @@
 						<input type="text" placeholder="Zamówienie" />
 						<button type="submit" class="button-style">Wyślij &#8594;</button>
 					</form>
-				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<footer class="footer">
-			<div class="footer__container">
-				<div class="footer__container-top">
-					<a class="footer__container-top-link"
-						>to top
-						<svg
-							class="to-top"
-							xmlns="http://www.w3.org/2000/svg"
-							viewBox="0 0 512 512"
-						>
-							<path
-								d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z"
-							></path>
-						</svg>
-					</a>
-				</div>
-				<div class="footer__container-policy">
-					<a
-						class="footer__container-text small-uppercase-style"
-						target="_blank"
-						href="ciasta.html"
-						>Regulamin</a
-					>
-					<span>|</span>
-					<a
-						class="footer__container-text small-uppercase-style"
-						target="_blank"
-						href=""
-						>Polityka prywatności</a
-					>
-				</div>
-				<div class="footer__container-copyrights">
-					<a
-						class="footer__container-text small-uppercase-style"
-						target="_blank"
-						href="https://www.instagram.com/milko.design/"
-						>© 2021 milko design</a
-					>
-				</div>
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__container-top">
+				<a class="footer__container-top-link">to top
+					<svg class="to-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path
+							d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z">
+						</path>
+					</svg>
+				</a>
 			</div>
-		</footer>
+			<div class="footer__container-policy">
+				<a class="footer__container-text small-uppercase-style" target="_blank" href="ciasta.html">Regulamin</a>
+				<span>|</span>
+				<a class="footer__container-text small-uppercase-style" target="_blank" href="">Polityka prywatności</a>
+			</div>
+			<div class="footer__container-copyrights">
+				<a class="footer__container-text small-uppercase-style" target="_blank"
+					href="https://www.instagram.com/milko.design/">© 2021 milko design</a>
+			</div>
+		</div>
+	</footer>
 
-		<script
-			type="text/javascript"
-			src="//code.jquery.com/jquery-1.11.0.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
-		></script>
-		<script
-			type="text/javascript"
-			src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
-		></script>
-		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-		<script src="./js/aos.js"></script>
-		<script src="./js/slick.js"></script>
-    <script src="./js/nav.js"></script>
-	</body>
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="./js/aos.js"></script>
+	<script src="./js/slick.js"></script>
+	<script src="./js/nav.js"></script>
+</body>
+
 </html>

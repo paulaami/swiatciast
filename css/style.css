@@ -932,11 +932,13 @@ header {
 
 .offer__price-container-menu {
   width: 100%;
+  margin-bottom: 20px;
 }
 
 .offer__price-container-menu p {
   margin-bottom: 5px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Denmark', sans-serif;
+  font-size: 2.3rem;
 }
 
 .offer__price-container-menu a {

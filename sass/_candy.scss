@@ -1,0 +1,51 @@
+.offer__price {
+  .order-style {
+    margin-top: 40px;
+    margin-right: 0;
+    padding: 0.7em;
+    max-width: 200px;
+    padding-top: 10px;
+  }
+
+  &-candy {
+    padding: 100px 20px;
+    width: 90vw;
+    background-color: #e3d6c7;
+    .right {
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &-container-text {
+   p:nth-of-type(1) {
+    margin-bottom: 10px;
+   }
+
+   p:nth-of-type(2) {
+    margin-bottom: 10px;
+   }
+    .candy-price {
+      margin-top: 50px;
+      max-width: initial;
+      text-align: left;
+    }
+  }
+}
+
+.offer__candy {
+  &-list {
+    list-style-type: square;
+    li {
+      list-style-position: inside;
+      &::marker {
+        color: $dark-brown;
+      }
+    }
+  }
+  .last-item {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+  }
+}

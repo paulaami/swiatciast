@@ -290,8 +290,11 @@
 
   .section__gallery {
     &-container {
-      &-img {
-        width: 33%;
+      &-box {
+        a {
+          width: 50%;
+          overflow: hidden;
+        }
       }
     }
   }
@@ -322,6 +325,17 @@
 
   table th {
     width: 160px;
+  }
+
+  /*CANDY */
+
+  .offer__candy {
+    &-list {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: 100px;
+    }
   }
 }
 

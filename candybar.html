@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Słodki Świat Ciast</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600&family=Nunito+Sans:wght@300;400;600&family=Playfair+Display:wght@400;500;600;700&family=Cormorant+SC:wght@300;400;500&&display=swap"
+    rel="stylesheet" />
+    <link href="dist/css/lightbox.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <header>
+    <nav class="nav__container">
+      <ul class="nav__container-list">
+        <li class="nav__container-list-item flex-item">home</li>
+        <li class="nav__container-list-item flex-item">o mnie</li>
+        <li class="nav__container-list-item">
+          <img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg" alt="Logo Slodki Swiat Ciast" />
+        </li>
+        <li class="nav__container-list-item flex-item">oferta</li>
+        <li class="nav__container-list-item flex-item">kontakt</li>
+      </ul>
+      <div class="nav__container-menu fixed-item">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </div>
+      <div class="nav__container-menu-mobile">
+        <ul>
+          <li><a href="">home</a></li>
+          <li><a href="">o mnie</a></li>
+          <li><a href="">oferta</a></li>
+          <li><a href="">kontakt</a></li>
+        </ul>
+        <div class="nav__container-menu-mobile-social">
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <circle cx="256" cy="255.833" r="80"></circle>
+              <path
+                d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
+              </path>
+            </svg></a>
+          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
+              </path>
+            </svg></a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="offer__one">
+    <div class="offer__one-container">
+      <h2>Candy Bar</h2>
+      <div class="offer__one-container-left">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis tempore corrupti veniam, vero aliquid aliquam
+          ipsam quod earum repudiandae assumenda officiis eligendi voluptatem porro deleniti perspiciatis, ducimus
+          consequuntur, saepe quam.
+        </p>
+        <p>
+          Poniższy <span><a class="price-link" href="#price">cennik</a></span> dotyczy...
+        </p>
+        <a href="#price" class="button-style">Przejdź do oferty</a>
+      </div>
+      <div class="offer__one-container-right">
+        <!-- <h2>Co mnie wyróżnia?</h2> -->
+        <div class="left">
+          <h2 class="offer__price-container-title">
+            Do każdego wypieku podchodzimy indywidualnie z dbałością o smak i
+            wygląd.
+          </h2>
+          <p class="text-uppercase-style">
+            To wszystko ma wpływ na końcową cenę zamówienia.
+          </p>
+        </div>
+        <div class="right">
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum saepe modi est incidunt impedit aut
+              nesciunt repellat cumque obcaecati quidem.
+            </p>
+          </div>
+
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Przygotowanie wypieków to kilkudniowy proces zaczynając od
+              ustalenia koncepcji z klientem, wybór smaków, przygotowania
+              projektu po upieczenie.....
+            </p>
+          </div>
+
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Wszystkie wypieki przygotowywane są z
+              <span>naturalnych składników</span> – Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt,
+              voluptatum animi consectetur nam.
+            </p>
+          </div>
+
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Przygotowuję wypieki dla osób z <span>nietolerancją</span> pokarmową - <span>bez</span> glutenu, laktozy i
+              cukru.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="offer__price offer__candy">
+    <div class="offer__price-container">
+      <h3 id="price" class="handwritten">Oferta</h3>
+      <div class="offer__price-container-menu">
+        <p>Przejdz szybko do...</p>
+        <ul class="offer__candy-list">
+          <li><a href="#cupcakes">Cup cakes / muffinki</a></li>
+          <li><a href="#mini">Mini deserki</a></li>
+          <li><a href="#cakepops">Cake pops / cake sicles</a></li>
+          <li><a href="#taralets">Tartaletki</a></li>
+          <li><a href="#ciastka">Ciastka / bezy / donuty</a></li>
+          <li><a href="#mono">Monoporcje / mirror glaze</a></li>
+        </ul>
+      </div>
+
+      <h2 id="cupcakes">Cup cakes / muffinki</h2>
+      <p class="text-uppercase-style"></p>
+      <div class="offer__price-container-box">
+        <ol>
+          <li>Waniliowe z frużeliną malinową i kremem z białej czekolady</li>
+          <p></p>
+          <p class="box-price"></p>
+          <li>Czekoladowe z wiśniami i kremem śmietankowym</li>
+          <p class="box-price"></p>
+          <li>Babeczka leśny mech z kremem śmietankowym i granatem</li>
+          <p class="box-price"></p>
+          <li>Cupcake z kremem Oreo / Snickers / Kinder Bueno</li>
+          <p class="box-price"></p>
+          <li>Czekoladowe z dodatkiem słonego karmelu i kremem czekoladowym</li>
+          <p class="box-price"></p>
+        </ol>
+        <a class="button-style order-style" href="#order">złóż zamówienie →</a>
+      </div>
+
+      <h2 id="mini">Mini deserki</h2>
+      <p class="text-uppercase-style"></p>
+      <div class="offer__price-container-box">
+        <ol>
+          <li>Tiramisu</li>
+          <p></p>
+          <p class="box-price"></p>
+          <li>Mus szampański %</li>
+          <p class="box-price"></p>
+          <li>Leśny mech z granatem</li>
+          <p class="box-price"></p>
+          <li>Kinder Country</li>
+          <p class="box-price"></p>
+          <li>Pudding chia z sosem owocowym</li>
+          <p class="box-price"></p>
+          <li>Mus czekoladowy z owocami</li>
+          <p class="box-price"></p>
+          <li>Panna cotta z sosem owocowym/ kawowa/ earl grey/ miętowa/ hibiskus&pina colada</li>
+          <p class="box-price"></p>
+          <li>Mini sernik na zimno z ostrą salsą: mango/jabłko-cynamon/ truskawka-wanilia/ pomarańcza-mięta</li>
+          <p class="box-price"></p>
+          <li>Serniczek karmelowy</li>
+          <p class="box-price"></p>
+        </ol>
+        <a class="button-style order-style" href="#order">złóż zamówienie →</a>
+      </div>
+
+      <h2 id="cakepops">Cake pops/ cake sicles</h2>
+      <p class="text-uppercase-style"></p>
+
+      <div class="offer__price-container-box">
+        <ol>
+          <li>Czekoladowe</li>
+          <p></p>
+          <p class="box-price"></p>
+          <li>Czekoladowo rumowe</li>
+          <p class="box-price"></p>
+          <li>Miętowo cytrynowe</li>
+          <p class="box-price"></p>
+          <li>Kawowe</li>
+          <p class="box-price"></p>
+          <li>Chilli</li>
+          <p class="box-price"></p>
+          <li>Orzechowe</li>
+          <p class="box-price"></p>
+          <li>Malinowe</li>
+          <p class="box-price"></p>
+          <li>Mini sernik na zimno z ostrą salsą: mango/jabłko-cynamon/ truskawka-wanilia/ pomarańcza-mięta</li>
+          <p class="box-price"></p>
+          <li>Mango</li>
+          <p class="box-price"></p>
+        </ol>
+        <a class="button-style order-style" href="#order">złóż zamówienie →</a>
+
+      </div>
+
+      <h2 id="tartalets">Tartaletki</h2>
+      <p class="text-uppercase-style"></p>
+
+      <div class="offer__price-container-box">
+        <ol>
+          <li>Tartaletka solony karmel z orzechami i ganache czekoladowy</li>
+          <p class="box-price"></p>
+          <li>Tartaletka jabłka pod maślana kruszonką</li>
+          <p class="box-price"></p>
+          <li>Tartaletka szarlotka z bezą</li>
+          <p class="box-price"></p>
+          <li>Tartaletka lemon cudr</li>
+          <p class="box-price"></p>
+          <li>Tartaletka Snickers</li>
+          <p class="box-price"></p>
+          <li>Tartaletka z rabarbarem, kremem patissiere i kruszonką</li>
+          <p class="box-price"></p>
+          <li>Tartaletka z praliną orzechową , ganachem czekoladowym i kremem kawowym</li>
+          <p class="box-price"></p>
+          <li>Tartaletka z solonym karmelem, ganachem czekoladowym
+            i popcornem</li>
+          <p class="box-price"></p>
+          <li>Tartaletka z malinową praliną , lemon cudr i bezą</li>
+          <p class="box-price"></p>
+          <li>Tartaletka truskawkowa z musem advocat i pistacją</li>
+          <p class="box-price"></p>
+          <li>Tartaletka banan w słonym karmelu z borówką</li>
+          <p class="box-price"></p>
+          <li>Tartaletka baileys truskawka</li>
+          <p class="box-price"></p>
+          <li>Tartaletka Ferrero Rocher</li>
+          <p class="box-price"></p>
+        </ol>
+        <a class="button-style order-style" href="#order">złóż zamówienie →</a>
+      </div>
+
+      <h2 id="ciastka">Ciastka / bezy / donuty</h2>
+      <p class="text-uppercase-style"></p>
+
+      <div class="offer__price-container-box">
+        <ol>
+          <li>Mini pavlova z frużeliną malinową/ lemon cudr, kremem i owocami/ dacquoise
+          </li>
+          <p class="box-price"></p>
+          <li>Donut: brownie, pistacjowy , czekoladowy, oreo</li>
+          <p class="box-price"></p>
+          <li>Mega czekoladowe pękające ciastka</li>
+          <p class="box-price"></p>
+          <li>Eklerki</li>
+          <p class="box-price"></p>
+          <li>Ptyś z kruszonką
+          </li>
+          <p class="box-price"></p>
+          <li>Makaroniki
+          </li>
+          <p class="box-price"></p>
+          <li>Słoik mini bezików/ pianek/ żelków</li>
+          <p class="box-price"></p>
+        </ol>
+        <a class="button-style order-style" href="#order">złóż zamówienie →</a>
+      </div>
+
+      <h2 id="mono">Monoporcje / mirror glaze</h2>
+      <p class="text-uppercase-style"></p>
+      <div class="offer__price-container-box">
+        <ul>
+          <li class="last-item">Smaki ustalane są indywidualnie wg. Predyspozycji osoby zamawiającej.</li>
+          <p class="box-price"></p>
+        </ul>
+      </div>
+
+
+    </div>
+    <a href="#order" class="button-style">Złóż zamówienie</a>
+  </section>
+
+  <section class="offer__price">
+    <div class="offer__price-container offer__cake offer__price-candy">
+      <div class="offer__price-container-text">
+        <h2 class="handwritten">Cennik</h2>
+
+        <h3>Cena Candy Baru wynosi 40 zł/os, w zależności od ilości gości</h3>
+
+        <div class="right">
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Na cenę składają się słodkości w określonym kolorze przewodnim oraz
+              użyczone naczynia, tace, patery, świeczniki, wszelkie dekoracje, aranżacja stołu, oraz rozstawienie
+              słodkości
+              w lokalu.
+            </p>
+          </div>
+
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Najmniejsza ilość, dla której możliwe jest zamówienie kompleksowego candy baru to 50 osób. Poniżej tej
+              liczby
+              słodkości mogą być wykonane na sztuki. Dla każdego rodzaju asortymentu określona jest minimalna ilość
+              sztuk.
+            </p>
+          </div>
+
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Dodatkowo płatne są dekoracje kwiatowe i balonowe
+            </p>
+          </div>
+
+          <div class="offer__one-container-right-desc">
+            <img src="./svg/cake.svg" alt="" />
+            <p>
+              Istnieje możliwość zakupienia mniejszych ilości deserków. Oferta przygotowywana jest indywidualnie.
+            </p>
+          </div>
+        </div>
+
+        <p class="text-uppercase-style candy-price">ogólny przelicznik</p>
+        <p class="candy-price-detail">*standard: 4 szt. / os</p>
+        <p class="candy-price-detail">*premium: 5-6 szt./ os</p>
+      </div>
+    </div>
+    <a class="button-style">Złóż zamówienie</a>
+  </section>
+
+  <section class="section__gallery">
+    <h1 class="handwritten">Upieczone</h1>
+    <p class="text-uppercase-style">galeria zdjęć</p>
+    <h2>Zobacz moje realizacje</h2>
+    <div class="section__gallery-container">
+      <div class="section__gallery-container-box">
+        <a data-lightbox="image-1" href="./img/candybar/candybar1.jpg"><img src="./img/candybar/candybar1.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar2.jpg"><img src="./img/candybar/candybar2.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar3.jpg"><img src="./img/candybar/candybar3.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar4.jpg"><img src="./img/candybar/candybar4.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar5.jpg"><img src="./img/candybar/candybar5.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar6.jpg"><img src="./img/candybar/candybar6.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar7.jpg"><img src="./img/candybar/candybar7.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar8.jpg"><img src="./img/candybar/candybar8.jpg" alt="" /></a>
+        <a data-lightbox="image-1" href="./img/candybar/candybar9.jpg"><img src="./img/candybar/candybar9.jpg" alt="" /></a>
+
+      </div>
+    </div>
+
+    <!-- <div class="section__gallery-modal">
+      <div class="section__gallery-modal-details">
+        <p class="section__gallery-modal-text">
+          Zdjęcie nr <span class="current-img"></span> z
+          <span class="total-img"></span>
+        </p>
+
+        <div class="section__gallery-modal-close">
+          <img src="./svg/close-button.svg" alt="" />
+        </div>
+      </div>
+
+      <div class="section__gallery-modal-box">
+        <div class="slide prev">
+          <img src="./svg/left-arrow.svg" alt="" />
+        </div>
+
+        <div class="slide next">
+          <img src="./svg/right-arrow.svg" alt="" />
+        </div>
+        <img class="box-img" src="" alt="" />
+      </div>
+    </div> -->
+  </section>
+
+  <div class="shadow"></div>
+
+  <section class="contact__section" id="order">
+    <div class="contact__section-container flex-column">
+      <div class="bg-img-shadow"></div>
+      <img src="./img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
+      <video autoplay loop muted class="image-style">
+        <source src="./video/cake-design.mp4" type="video/mp4">
+      </video>
+      <div class="contact__section-container-form flex-column">
+        <h2>Złóż zamówienie</h4>
+          <p>
+            Wystarczy wypełnić poniższy formularz podając w treści wiadomości
+            wybrane zamówienie.
+          </p>
+          <form class="flex-column" action="">
+            <input type="text" placeholder="Imię i nazwisko" />
+            <input type="text" placeholder="Zamówienie" />
+            <button type="submit" class="button-style">Wyślij &#8594;</button>
+          </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__container-top">
+        <a class="footer__container-top-link">to top
+          <svg class="to-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <path
+              d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z">
+            </path>
+          </svg>
+        </a>
+      </div>
+      <div class="footer__container-policy">
+        <a class="footer__container-text small-uppercase-style" target="_blank" href="">Regulamin</a>
+        <span>|</span>
+        <a class="footer__container-text small-uppercase-style" target="_blank" href="">Polityka prywatności</a>
+      </div>
+      <div class="footer__container-copyrights">
+        <a class="footer__container-text small-uppercase-style" target="_blank"
+          href="https://www.instagram.com/milko.design/">© 2021 milko design</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="./js/aos.js"></script>
+  <script src="./js/slider.js"></script>
+  <script src="./js/nav.js"></script>
+  <script src="./dist/js/lightbox.js"></script>
+</body>
+
+</html>

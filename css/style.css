@@ -778,10 +778,11 @@ header {
   font-weight: 300;
 }
 
-.handwritten {
-  font-family: 'Denmark';
+.offer__price .handwritten {
+  font-family: "Denmark";
   font-size: 3.5rem;
   font-weight: 300;
+  color: #2d2d2b;
 }
 
 .offer__one {
@@ -932,17 +933,18 @@ header {
 
 .offer__price-container-menu {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .offer__price-container-menu p {
-  margin-bottom: 5px;
-  font-family: 'Denmark', sans-serif;
+  margin-bottom: 10px;
+  font-family: "Denmark", sans-serif;
   font-size: 2.3rem;
 }
 
 .offer__price-container-menu a {
   color: #855743;
+  font-size: 1.8rem;
 }
 
 .offer__price-container-menu a:hover {
@@ -967,7 +969,8 @@ header {
   color: #855743;
 }
 
-.offer__price-container-text p:first-of-type, .offer__price-container-text p:nth-of-type(2) {
+.offer__price-container-text p:first-of-type,
+.offer__price-container-text p:nth-of-type(2) {
   margin-bottom: 50px;
 }
 
@@ -988,12 +991,12 @@ header {
 
 .offer__price-container-table h3::after, .offer__price-container-table h3::before {
   position: absolute;
-  content: '';
+  content: "";
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 60px;
-  height: .7px;
+  height: 0.7px;
   background-color: #2d2d2b;
 }
 
@@ -1042,7 +1045,7 @@ header {
 }
 
 .section__gallery h1 {
-  font-family: 'Denmark';
+  font-family: "Denmark";
   text-align: center;
   margin-bottom: 20px;
 }
@@ -1069,36 +1072,31 @@ header {
       flex-wrap: wrap;
 }
 
-.section__gallery-container-img {
+.section__gallery-container a {
+  display: block;
   position: relative;
-  width: 100%;
-  height: 250px;
-  padding: 7px;
+  width: 80vw;
+  height: 80vw;
+  max-width: 300px;
+  max-height: 300px;
+  margin: 7px;
 }
 
-.section__gallery-container-img:hover img {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.section__gallery-container-img img {
+.section__gallery-container img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
-  transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+  -webkit-transition: -webkit-transform .4s;
+  transition: -webkit-transform .4s;
+  transition: transform .4s;
+  transition: transform .4s, -webkit-transform .4s;
 }
 
-.section__gallery-container-img span {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.section__gallery-container img:hover {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+  opacity: .9;
 }
 
 .section__gallery-modal {
@@ -1267,6 +1265,55 @@ header {
   width: 100%;
   height: 0.7px;
   background-color: #2d2d2b;
+}
+
+.offer__price .order-style {
+  margin-top: 40px;
+  margin-right: 0;
+  padding: 0.7em;
+  max-width: 200px;
+  padding-top: 10px;
+}
+
+.offer__price-candy {
+  padding: 100px 20px;
+  width: 90vw;
+  background-color: #e3d6c7;
+}
+
+.offer__price-candy .right p {
+  margin-bottom: 0;
+}
+
+.offer__price-container-text p:nth-of-type(1) {
+  margin-bottom: 10px;
+}
+
+.offer__price-container-text p:nth-of-type(2) {
+  margin-bottom: 10px;
+}
+
+.offer__price-container-text .candy-price {
+  margin-top: 50px;
+  max-width: initial;
+  text-align: left;
+}
+
+.offer__candy-list {
+  list-style-type: square;
+}
+
+.offer__candy-list li {
+  list-style-position: inside;
+}
+
+.offer__candy-list li::marker {
+  color: #855743;
+}
+
+.offer__candy .last-item {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 @media screen and (min-width: 375px) {
@@ -1550,8 +1597,9 @@ header {
     margin-top: 0;
     font-size: 1.1rem;
   }
-  .section__gallery-container-img {
-    width: 33%;
+  .section__gallery-container-box a {
+    width: 50%;
+    overflow: hidden;
   }
   /*TORTY*/
   .offer__one {
@@ -1573,6 +1621,19 @@ header {
   }
   table th {
     width: 160px;
+  }
+  /*CANDY */
+  .offer__candy-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 100px;
   }
 }
 
@@ -1718,6 +1779,9 @@ header {
   }
   .offer__one-right .right {
     width: 40%;
+  }
+  .offer__price-candy .offer__price-container-text {
+    width: 70%;
   }
 }
 /*# sourceMappingURL=style.css.map */

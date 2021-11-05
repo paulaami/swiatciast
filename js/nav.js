@@ -5,6 +5,7 @@ const showNav = () => {
     const fixedItem = document.querySelectorAll('.fixed-item');
 
     navMobile.classList.toggle('show-nav');
+    document.body.classList.toggle('lock-body-overflow');
     fixedItem.forEach( item => item.classList.toggle('show-fixed'));
 }
 

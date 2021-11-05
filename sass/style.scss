@@ -143,6 +143,10 @@ h3 {
   background-color: #170b067d;
 }
 
+.lock-body-overflow {
+	overflow: hidden;
+}
+
 //HEADER
 
 header {
@@ -314,6 +318,7 @@ header {
   transform: translate(-50%);
   width: 270px;
   height: 270px;
+		z-index: 11;
 }
 
 .show-fixed {

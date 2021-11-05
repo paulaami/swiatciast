@@ -152,6 +152,10 @@ h3 {
   background-color: #170b067d;
 }
 
+.lock-body-overflow {
+  overflow: hidden;
+}
+
 header {
   z-index: 20;
   /* should add position fixed in JS */
@@ -350,6 +354,7 @@ header {
           transform: translate(-50%);
   width: 270px;
   height: 270px;
+  z-index: 11;
 }
 
 .show-fixed {

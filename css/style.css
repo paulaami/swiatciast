@@ -295,6 +295,7 @@ header {
 .nav__container-menu-mobile .mobile-item ul {
   position: static;
   display: none;
+  padding: 30px 0 10px 0;
   opacity: 0;
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);

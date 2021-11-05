@@ -18,16 +18,21 @@
 </head>
 
 <body>
-  <header>
+  <header id="home">
     <nav class="nav__container">
       <ul class="nav__container-list">
-        <li class="nav__container-list-item flex-item">home</li>
-        <li class="nav__container-list-item flex-item">o mnie</li>
+        <li class="nav__container-list-item flex-item home-item"><a href="index.html"><span>&#8592;</span> home</a></li>
         <li class="nav__container-list-item">
-          <img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg" alt="Logo Slodki Swiat Ciast" />
+          <a href="#"><img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg"
+						alt="Logo Slodki Swiat Ciast" /></a>
         </li>
-        <li class="nav__container-list-item flex-item">oferta</li>
-        <li class="nav__container-list-item flex-item">kontakt</li>
+        <li class="nav__container-list-item flex-item rel-item offer-item"><a href="#">oferta</a>
+          <ul class="dropdown-list">
+            <li><a href="torty.html">Torty</a></li>
+            <li><a href="ciasta.html">Ciasta</a></li>
+            <li><a href="candybar.html">Candybar</a></li>
+          </ul>
+        </li>
       </ul>
       <div class="nav__container-menu fixed-item">
         <div class="line"></div>
@@ -36,24 +41,15 @@
       </div>
       <div class="nav__container-menu-mobile">
         <ul>
-          <li><a href="">home</a></li>
-          <li><a href="">o mnie</a></li>
-          <li><a href="">oferta</a></li>
-          <li><a href="">kontakt</a></li>
+          <li><a href="index.html"><span>&#8592;</span> home</a></li>
+          <li class="mobile-item"><a href="#">oferta</a>
+            <ul>
+              <li><a href="torty.html">Torty</a></li>
+              <li><a href="ciasta.html">Ciasta</a></li>
+              <li><a href="candybar.html">Candybar</a></li>
+            </ul>
+          </li>
         </ul>
-        <div class="nav__container-menu-mobile-social">
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <circle cx="256" cy="255.833" r="80"></circle>
-              <path
-                d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
-              </path>
-            </svg></a>
-          <a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-              <path
-                d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
-              </path>
-            </svg></a>
-        </div>
       </div>
     </nav>
   </header>
@@ -358,26 +354,35 @@
     </div>
   </section>
 
-  <div class="shadow"></div>
+
 
   <section class="contact__section" id="order">
+    <div class="bg-img-shadow"></div>
+    <img src="./img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
+    <video autoplay loop muted class="image-style">
+      <source src="/video/cake-design.mp4" type="video/mp4">
+    </video>
     <div class="contact__section-container flex-column">
-      <div class="bg-img-shadow"></div>
-      <img src="./img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
-      <video autoplay loop muted class="image-style">
-        <source src="./video/cake-design.mp4" type="video/mp4">
-      </video>
       <div class="contact__section-container-form flex-column">
-        <h2>Złóż zamówienie</h4>
-          <p>
-            Wystarczy wypełnić poniższy formularz podając w treści wiadomości
-            wybrane zamówienie.
-          </p>
-          <form class="flex-column" action="">
-            <input type="text" placeholder="Imię i nazwisko" />
-            <input type="text" placeholder="Zamówienie" />
-            <button type="submit" class="button-style">Wyślij &#8594;</button>
-          </form>
+        <h2>Złóż zamówienie</h2>
+        <p>
+          Wystarczy wypełnić poniższy formularz podając w treści wiadomości
+          wybrane zamówienie.
+        </p>
+        <form class="flex-column" action="">
+          <input type="text" placeholder="Imię i nazwisko" aria-label="miejsce na imię i nazwisko" required />
+          <input type="email" placeholder="Email" aria-label="miejsce na email" required />
+          <textarea cols="30" rows="10" type="text" placeholder="Zamówienie" aria-label="miejsce na twoją wiadomość"
+            required></textarea>
+          <div class="accept-box">
+            <input type="checkbox" id="accept-field"
+              value="Wyrażam zgodę na przetwarzanie podanych przeze mnie w powyższym formularzu danych osobowych, przez Renata XXX w celu udzielenia odpowiedzi na zapytanie/ zamówienie przesłane przeze mnie za pomocą formularza oraz w celu prowadzenia dalszej korespondencji mailowej."
+              required>
+            <label for="accept-field">Wyrażam zgodę na przetwarzanie podanych przeze mnie w formularzu
+              danych osobowych w celu przetworzenia mojego zapytania przez slodkiswiatciast.pl</label>
+          </div>
+          <button type="submit" class="button-style">Wyślij</button>
+        </form>
       </div>
     </div>
   </section>
@@ -385,22 +390,34 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__container-top">
-        <a class="footer__container-top-link">to top
-          <svg class="to-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-            <path
-              d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z">
-            </path>
-          </svg>
-        </a>
+        <a href="#home" class="footer__container-top-link">to top
+					<svg class="to-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path
+							d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z">
+						</path>
+					</svg>
+				</a>
       </div>
       <div class="footer__container-policy">
-        <a class="footer__container-text small-uppercase-style" target="_blank" href="">Regulamin</a>
+        <a class="footer__container-text small-uppercase-style" target="_blank" href="ciasta.html">Polityka prywatności</a>
         <span>|</span>
-        <a class="footer__container-text small-uppercase-style" target="_blank" href="">Polityka prywatności</a>
+        <a class="footer__container-text" target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<circle cx="256" cy="255.833" r="80"></circle>
+					<path
+						d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
+					</path>
+				</svg></a>
+        <a class="footer__container-text" target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<path
+						d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
+					</path>
+				</svg></a>
+
+
       </div>
       <div class="footer__container-copyrights">
         <a class="footer__container-text small-uppercase-style" target="_blank"
-          href="https://www.instagram.com/milko.design/">© 2021 milko design</a>
+					href="https://www.instagram.com/milko.design/">© 2021 milko design</a>
       </div>
     </div>
   </footer>
@@ -412,6 +429,7 @@
   <script src="./js/aos.js"></script>
   <script src="./js/slider.js"></script>
   <script src="./js/nav.js"></script>
+  <script src="./js/footer.js"></script>
   <script src="./dist/js/lightbox.js"></script>
 </body>
 

@@ -17,16 +17,39 @@
 </head>
 
 <body>
-	<header>
+	<header id="home">
 		<nav class="nav__container">
+
+			<!-- <div class="nav__container-social">
+				<a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<circle cx="256" cy="255.833" r="80"></circle>
+						<path
+							d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
+						</path>
+					</svg></a>
+				<a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+						<path
+							d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
+						</path>
+					</svg></a>
+			</div> -->
+
 			<ul class="nav__container-list">
-				<li class="nav__container-list-item flex-item">home</li>
-				<li class="nav__container-list-item flex-item">o mnie</li>
+				<li class="nav__container-list-item flex-item"><a href="#">home</a></li>
+				<li class="nav__container-list-item flex-item"><a href="#about">o mnie</a></li>
 				<li class="nav__container-list-item">
-					<img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg" alt="Logo Slodki Swiat Ciast" />
+					<a href="#"><img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg"
+						alt="Logo Slodki Swiat Ciast" /></a>
 				</li>
-				<li class="nav__container-list-item flex-item">oferta</li>
-				<li class="nav__container-list-item flex-item">kontakt</li>
+				<li class="nav__container-list-item flex-item rel-item"><a href="#">oferta</a>
+					<ul class="dropdown-list">
+						<li><a href="torty.html">Torty</a></li>
+						<li><a href="ciasta.html">Ciasta</a></li>
+						<li><a href="candybar.html">Candybar</a></li>
+					</ul>
+				</li>
+
+				<li class="nav__container-list-item flex-item"><a href="#map">kontakt</a></li>
 			</ul>
 			<div class="nav__container-menu fixed-item">
 				<div class="line"></div>
@@ -35,24 +58,17 @@
 			</div>
 			<div class="nav__container-menu-mobile">
 				<ul>
-					<li><a href="">home</a></li>
-					<li><a href="">o mnie</a></li>
-					<li><a href="">oferta</a></li>
-					<li><a href="">kontakt</a></li>
+					<li><a href="#">home</a></li>
+					<li><a href="#about">o mnie</a></li>
+					<li class="mobile-item"><a href="#">oferta</a>
+						<ul>
+							<li><a href="torty.html">Torty</a></li>
+							<li><a href="ciasta.html">Ciasta</a></li>
+							<li><a href="candybar.html">Candybar</a></li>
+						</ul>
+					</li>
+					<li><a href="#map">kontakt</a></li>
 				</ul>
-				<div class="nav__container-menu-mobile-social">
-					<a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-							<circle cx="256" cy="255.833" r="80"></circle>
-							<path
-								d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
-							</path>
-						</svg></a>
-					<a href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-							<path
-								d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
-							</path>
-						</svg></a>
-				</div>
 			</div>
 		</nav>
 	</header>
@@ -65,9 +81,8 @@
 				<div class="main__section-container-box-text">
 					<ul>
 						<li><a href="torty.html">Torty</a></li>
-						<li>Ciasta</li>
-						<li>Candy Bar</li>
-						<li>Monoporcje</li>
+						<li><a href="ciasta.html">Ciasta</a></li>
+						<li><a href="candybar.html">Candy Bar</a></li>
 					</ul>
 				</div>
 			</div>
@@ -77,7 +92,7 @@
 			<div class="main__section-container-box"><img src="./img/Slice4.jpg" alt="zdjęcie ciasta"
 					class="main__section-container-img image-style" /><img src="./img/Slice7.jpg" alt="zdjęcie tortu"
 					class="main__section-container-img image-style" />
-				<h3 class="main__section-container-box-heading">Zobacz Ofertę</h3>
+				<h3 class="main__section-container-box-heading"><a href="#offer">Zobacz Ofertę</a></h3>
 			</div>
 		</div>
 		<!-- <div class="main__section-box flex-column">
@@ -91,7 +106,7 @@
 			</div> -->
 	</section>
 
-	<section class="offer__section flex-column">
+	<section class="offer__section flex-column" id="offer">
 		<!-- <div class="section-line"></div> -->
 		<p class="text-uppercase-style">miło cię widzieć</p>
 		<h1 class="offer__section-heading">Zapoznaj się z moją ofertą</h1>
@@ -101,48 +116,56 @@
 			</p>
 		</div>
 		<div class="offer__section-container flex-column">
-			<div class="offer__section-container-box offer-one">
-				<img class="image-style" src="./img/triple-cake-s.jpg" alt="" />
-				<div class="offer__section-container-box-text">
-					<p>Torty artystyczne oraz wykonywane na specjalne okazje.</p>
-				</div>
-				<div class="offer-text">
-					<p><a href="torty.html">Torty &#8594;</a></p>
-				</div>
+			<div class="offer__section-container-box">
+				<a class="offer__section-container-box-link" href="torty.html">
+					<div class="offer__section-image">
+						<img class="image-style" src="./img/triple-cake-s.jpg" alt="zdjęcie tortów" />
+				</a>
+				<a class="offer-link" href="torty.html">
+					<div class="offer-text">
+						<span>Torty &#8594;</span>
+					</div>
+				</a>
 			</div>
-			<div class="offer__section-container-box offer-two">
-				<img class="image-style" src="./img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg" alt="" />
-				<div class="offer__section-container-box-text">
-					<p>Ciasta wegańskie, serniki, tarty, tartaletki</p>
-				</div>
+			<p>Torty artystyczne oraz wykonywane na specjalne okazje.</p>
+		</div>
+
+
+		<div class="offer__section-container-box">
+			<a class="offer__section-container-box-link" href="ciasta.html">
+				<div class="offer__section-image">
+					<img class="image-style" src="./img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg" alt="zdjęcie candy baru" />
+			</a>
+			<a class="offer-link" href="ciasta.html">
 				<div class="offer-text">
-					<p>Ciasta &#8594;</p>
+					<span>Ciasta &#8594;</span>
 				</div>
-			</div>
-			<div class="offer__section-container-box offer-three">
-				<img class="image-style" src="./img/meghan-rodgers-QpeoWEazLlM-unsplash.jpg" alt="" />
-				<div class="offer__section-container-box-text">
-					<p>Mini słodycze podane w wersji Finger Food. Wspaniała atrakcja weselna, komunijna, urodzinowa lub imprezowa.
-					</p>
-				</div>
+			</a>
+		</div>
+		<p>Ciasta wegańskie, serniki, tarty, tartaletki</p>
+		</div>
+
+
+		<div class="offer__section-container-box">
+			<a class="offer__section-container-box-link" href="candybar.html">
+				<div class="offer__section-image">
+					<img class="image-style" src="./img/lore-schodts-FIxdY7jOBus-unsplash.jpg" alt="zdjęcie ciasta" />
+			</a>
+			<a class="offer-link" href="candybar.html">
 				<div class="offer-text">
-					<p>Candy bar &#8594;</p>
+					<span>Candy bar &#8594;</span>
 				</div>
-			</div>
-			<div class="offer__section-container-box offer-four">
-				<img class="image-style" src="./img/lore-schodts-FIxdY7jOBus-unsplash.jpg" alt="" />
-				<div class="offer__section-container-box-text">
-					<p>Eleganckie ciastka - desery. Piękne uzupełnienie słodkiego stołu i wyjątkowa niespodzianka dla gości.</p>
-				</div>
-				<div class="offer-text">
-					<p>Monoporcje &#8594;</p>
-				</div>
-			</div>
+			</a>
+		</div>
+		<p>Mini słodycze podane w wersji Finger Food. Wspaniała atrakcja weselna, komunijna, urodzinowa lub imprezowa.
+		</p>
+		</div>
+
 		</div>
 
 	</section>
 
-	<section class="about__section">
+	<section class="about__section" id="about">
 		<div class="section-line"></div>
 		<p class="text-uppercase-style">kim jestem?</p>
 		<h2 class="about__section-container-heading">Kilka słów o mnie</h2>
@@ -154,26 +177,34 @@
 				<h3>Witajcie!</h3>
 				<p class="text-serif-style">Nazywam się Renata.</p>
 				<p class="text-style">
-					Moja tortowa przygoda rozpoczęła się 2 lata temu, przy okazji zamówienia tortu urodzinowego, z którego nie
+					Moja tortowa przygoda rozpoczęła się 2 lata temu, przy okazji zamówienia tortu urodzinowego, z
+					którego nie
 					byłam zadowolona.
-					Postanowiłam spróbować swoich sił przy kolejnej uroczystości rodzinnej , co przerodziło się w <span>pasję i miłość</span>
+					Postanowiłam spróbować swoich sił przy kolejnej uroczystości rodzinnej , co przerodziło się w <span>pasję i
+						miłość</span>
 					do wypieków od tortów, po ciasta, ciasteczka i różnego rodzaju desery.
 				</p>
-				<p class="text-style text-two">W <span>dbałości o każdy detal</span> przy realizacji zamówień, podążam za nowymi trendami,
+				<p class="text-style text-two">W <span>dbałości o każdy detal</span> przy realizacji zamówień, podążam
+					za nowymi
+					trendami,
 					cały czas
 					szkole się na
-					szkoleniach związanych z branżą cukierniczą, poznaje <span>nowe techniki i metody</span>, które przenoszę na torty, aby
+					szkoleniach związanych z branżą cukierniczą, poznaje <span>nowe techniki i metody</span>, które
+					przenoszę na
+					torty, aby
 					móc spełnić Wasze słodkie marzenia.
 					Tak powstała pracownia <span>Słodki Świat Ciast</span>. </p>
 			</div>
 		</div>
 		<div class="about__section-bottom">
 			<p class="text-style">Naszym priorytetem jest stawianie na produkty
-				<span>wysokiej jakości</span>, które zadowolą najbardziej wymagające podniebienie, a efektem ubocznym będą wypieki, cieszące
+				<span>wysokiej jakości</span>, które zadowolą najbardziej wymagające podniebienie, a efektem ubocznym
+				będą
+				wypieki, cieszące
 				oko każdego Klienta.
 				Zapewnimy słodką oprawę każdej imprezy rodzinnej w postaci Słodkich stołów i tortów.
 			</p>
-			<a class="button-style" href="torty.html">Złóż zamówienie</a>
+			<a class="button-style" href="#order">Złóż zamówienie</a>
 		</div>
 	</section>
 
@@ -194,7 +225,8 @@
 						/>
 					</div> -->
 				<p class="opinion__section-box-text text-serif-style">
-					"Polecamy z czystym sumieniem! Pracownia wywiązała się w każdym detalu, począwszy od wycen tortów, dogrywanie
+					"Polecamy z czystym sumieniem! Pracownia wywiązała się w każdym detalu, począwszy od wycen tortów,
+					dogrywanie
 					szczegółów, przez samo wykonanie (dzieło sztuki), po sam smak! Pycha!"
 				</p>
 				<p class="opinion__section-box-signature text-uppercase-style">- Karolina S.</p>
@@ -208,7 +240,8 @@
 							alt="Zdjęcie podopiecznej Zosi K."
 						/>
 					</div> -->
-				<p class="opinion__section-box-text text-serif-style">"Dziękuję za uszczęśliwienie mojego syna. Ciasto było
+				<p class="opinion__section-box-text text-serif-style">"Dziękuję za uszczęśliwienie mojego syna. Ciasto
+					było
 					piękne i pyszne. Goście zjedli wszystko, co do ostatniego okruszka. Gorąco polecam!"
 				</p>
 				<p class="opinion__section-box-signature text-uppercase-style">- Marta P.</p>
@@ -223,7 +256,8 @@
 						/>
 					</div> -->
 				<p class="opinion__section-box-text text-serif-style">
-					"Tort zamawiałam pierwszy raz. Okazał się strzałem w 10! Tort przepyszny i przepiękny. Goście zachwyceni,
+					"Tort zamawiałam pierwszy raz. Okazał się strzałem w 10! Tort przepyszny i przepiękny. Goście
+					zachwyceni,
 					wszystkim smakowało. Bardzo bardzo polecam!"
 				</p>
 				<p class="opinion__section-box-signature text-uppercase-style">- Anna K.</p>
@@ -231,23 +265,60 @@
 		</div>
 	</section>
 
-	<section class="contact__section">
+	<section id="map" class="map__section">
+		<p class="text-uppercase-style">odwiedź nas!</p>
+		<h2>Działamy stacjonarnie</h2>
+		<div class="map__section-text">
+			<p>Zamówienia na miejscu w pracowni realizowane są <span>po wcześniejszym kontakcie</span>, ponieważ na
+				miejscu nie zawsze będzie
+				osoba, która może przyjąć zamówienie</p>
+		</div>
+		<div class="map__section-container">
+			<div class="map__section-container-left">
+				<h3 class="text-uppercase-style">dane kontaktowe</h3>
+				<p>Słodki Świat Ciast</p>
+				<p>ul. Wojska Polskiego 21</p>
+				<p>Pruszków</p>
+				<p><a href="tel:+48516397940"><svg class="phone-icon" height="30" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="M0 0h48v48h-48z" fill="none"/><path d="M13.25 21.59c2.88 5.66 7.51 10.29 13.18 13.17l4.4-4.41c.55-.55 1.34-.71 2.03-.49 2.24.74 4.65 1.14 7.14 1.14 1.11 0 2 .89 2 2v7c0 1.11-.89 2-2 2-18.78 0-34-15.22-34-34 0-1.11.9-2 2-2h7c1.11 0 2 .89 2 2 0 2.49.4 4.9 1.14 7.14.22.69.06 1.48-.49 2.03l-4.4 4.42z"/></svg>+48 516397940</a>
+				</p>
+				<p><a href="mailto:pmilkowska@onet.pl"><svg class="mail-icon" height="30px" id="Layer_1" style="enable-background:new 0 0 512 512;" version="1.1" viewBox="0 0 512 512" width="512px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M67,148.7c11,5.8,163.8,89.1,169.5,92.1c5.7,3,11.5,4.4,20.5,4.4c9,0,14.8-1.4,20.5-4.4c5.7-3,158.5-86.3,169.5-92.1   c4.1-2.1,11-5.9,12.5-10.2c2.6-7.6-0.2-10.5-11.3-10.5H257H65.8c-11.1,0-13.9,3-11.3,10.5C56,142.9,62.9,146.6,67,148.7z"/><path d="M455.7,153.2c-8.2,4.2-81.8,56.6-130.5,88.1l82.2,92.5c2,2,2.9,4.4,1.8,5.6c-1.2,1.1-3.8,0.5-5.9-1.4l-98.6-83.2   c-14.9,9.6-25.4,16.2-27.2,17.2c-7.7,3.9-13.1,4.4-20.5,4.4c-7.4,0-12.8-0.5-20.5-4.4c-1.9-1-12.3-7.6-27.2-17.2l-98.6,83.2   c-2,2-4.7,2.6-5.9,1.4c-1.2-1.1-0.3-3.6,1.7-5.6l82.1-92.5c-48.7-31.5-123.1-83.9-131.3-88.1c-8.8-4.5-9.3,0.8-9.3,4.9   c0,4.1,0,205,0,205c0,9.3,13.7,20.9,23.5,20.9H257h185.5c9.8,0,21.5-11.7,21.5-20.9c0,0,0-201,0-205   C464,153.9,464.6,148.7,455.7,153.2z"/></g></svg>twojemail@gmail.com</a>
+				</p>
+			</div>
+			<div class="map__section-container-right">
+				<iframe
+					src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2447.58535919766!2d20.79981431579403!3d52.160049979747605!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471935ec2054ef69%3A0x2e53ebe05f10210d!2sAleja%20Wojska%20Polskiego%2031%2C%2005-800%20Pruszk%C3%B3w!5e0!3m2!1spl!2spl!4v1636017390992!5m2!1spl!2spl"
+					allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+	</section>
+
+	<section class="contact__section" id="order">
+		<div class="bg-img-shadow"></div>
+		<img src="./img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
+		<video autoplay loop muted class="image-style">
+			<source src="/video/cake-design.mp4" type="video/mp4">
+		</video>
 		<div class="contact__section-container flex-column">
-			<div class="bg-img-shadow"></div>
-			<img src="/img/pexels-katerina-holmes-5907554.jpg" alt="" class="image-style">
-			<video autoplay loop muted class="image-style">
-				<source src="/video/cake-design.mp4" type="video/mp4">
-			</video>
 			<div class="contact__section-container-form flex-column">
-				<h2>Złóż zamówienie</h4>
+				<h2>Złóż zamówienie</h2>
 					<p>
 						Wystarczy wypełnić poniższy formularz podając w treści wiadomości
 						wybrane zamówienie.
 					</p>
 					<form class="flex-column" action="">
-						<input type="text" placeholder="Imię i nazwisko" />
-						<input type="text" placeholder="Zamówienie" />
-						<button type="submit" class="button-style">Wyślij &#8594;</button>
+						<input type="text" placeholder="Imię i nazwisko" aria-label="miejsce na imię i nazwisko"
+							required />
+						<input type="email" placeholder="Email" aria-label="miejsce na email" required />
+						<textarea cols="30" rows="10" type="text" placeholder="Zamówienie"
+							aria-label="miejsce na twoją wiadomość" required></textarea>
+						<div class="accept-box">
+							<input type="checkbox" id="accept-field"
+								value="Wyrażam zgodę na przetwarzanie podanych przeze mnie w powyższym formularzu danych osobowych, przez Renata XXX w celu udzielenia odpowiedzi na zapytanie/ zamówienie przesłane przeze mnie za pomocą formularza oraz w celu prowadzenia dalszej korespondencji mailowej."
+								required>
+							<label for="accept-field">Wyrażam zgodę na przetwarzanie podanych przeze mnie w formularzu
+								danych osobowych w celu przetworzenia mojego zapytania przez slodkiswiatciast.pl</label>
+						</div>
+						<button type="submit" class="button-style">Wyślij</button>
 					</form>
 			</div>
 		</div>
@@ -256,7 +327,7 @@
 	<footer class="footer">
 		<div class="footer__container">
 			<div class="footer__container-top">
-				<a class="footer__container-top-link">to top
+				<a href="#home" class="footer__container-top-link">to top
 					<svg class="to-top" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 						<path
 							d="M277.375 427V167.296l119.702 119.702L427 256 256 85 85 256l29.924 29.922 119.701-118.626V427h42.75z">
@@ -265,9 +336,21 @@
 				</a>
 			</div>
 			<div class="footer__container-policy">
-				<a class="footer__container-text small-uppercase-style" target="_blank" href="ciasta.html">Regulamin</a>
+				<a class="footer__container-text small-uppercase-style" target="_blank" href="ciasta.html">Polityka prywatności</a>
 				<span>|</span>
-				<a class="footer__container-text small-uppercase-style" target="_blank" href="">Polityka prywatności</a>
+				<a class="footer__container-text" target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<circle cx="256" cy="255.833" r="80"></circle>
+					<path
+						d="M177.805 176.887c21.154-21.154 49.28-32.93 79.195-32.93s58.04 11.838 79.195 32.992c13.422 13.42 23.01 29.55 28.232 47.55H448.5v-113c0-26.51-20.49-47-47-47h-288c-26.51 0-49 20.49-49 47v113h85.072c5.222-18 14.81-34.19 28.233-47.614zM416.5 147.7c0 7.07-5.73 12.8-12.8 12.8h-38.4c-7.07 0-12.8-5.73-12.8-12.8v-38.4c0-7.07 5.73-12.8 12.8-12.8h38.4c7.07 0 12.8 5.73 12.8 12.8v38.4zm-80.305 187.58c-21.154 21.153-49.28 32.678-79.195 32.678s-58.04-11.462-79.195-32.616c-21.115-21.115-32.76-49.842-32.803-78.842H64.5v143c0 26.51 22.49 49 49 49h288c26.51 0 47-22.49 47-49v-143h-79.502c-.043 29-11.687 57.664-32.803 78.78z">
+					</path>
+				</svg></a>
+				<a class="footer__container-text" target="_blank" href=""><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+					<path
+						d="M288 192v-38.1c0-17.2 3.8-25.9 30.5-25.9H352V64h-55.9c-68.5 0-91.1 31.4-91.1 85.3V192h-45v64h45v192h83V256h56.4l7.6-64h-64z">
+					</path>
+				</svg></a>
+
+
 			</div>
 			<div class="footer__container-copyrights">
 				<a class="footer__container-text small-uppercase-style" target="_blank"
@@ -283,6 +366,7 @@
 	<script src="./js/aos.js"></script>
 	<script src="./js/slick.js"></script>
 	<script src="./js/nav.js"></script>
+	<script src="./js/footer.js"></script>
 </body>
 
 </html>

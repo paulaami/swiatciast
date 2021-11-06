@@ -198,7 +198,6 @@ header {
     &:hover > .dropdown-list {
       opacity: 1;
       transform: translateY(0px);
-      pointer-events: all;
     }
 
     .dropdown-list {
@@ -206,7 +205,6 @@ header {
       position: absolute;
       background-color: #ecd7a8;
       z-index: 10;
-      pointer-events: none;
 
       a {
         display: block;
@@ -256,7 +254,7 @@ header {
         flex-direction: column;
         align-items: center;
         width: 100%;
-        top: 220px;
+        top: 260px;
 
         a {
           display: block;
@@ -277,6 +275,14 @@ header {
         a {
           color: $main-gray;
         }
+      }
+
+      .dropdown__menu {
+        margin-top: 10px;
+      }
+
+      .active-color {
+        color: $dark-brown;
       }
 
       .mobile-item ul {
@@ -302,7 +308,7 @@ header {
       // }
     }
     .line {
-      width: 27px;
+      width: 30px;
       height: 2px;
       background-color: #6c6c6c;
     }
@@ -311,7 +317,6 @@ header {
 .show {
   display: block !important;
   transform: translateY(0px);
-  pointer-events: all;
 }
 .show-nav {
   display: block;

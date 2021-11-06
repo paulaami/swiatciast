@@ -14,6 +14,7 @@ const showNav = () => {
         item.addEventListener('click', () => {
             navMobile.classList.remove('show-nav');
             fixedItem.forEach(item => item.classList.remove('show-fixed'));
+            document.body.classList.remove('lock-body-overflow');
         })
     })
 }

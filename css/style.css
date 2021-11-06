@@ -152,6 +152,10 @@ h3 {
   background-color: #170b067d;
 }
 
+.hide {
+  display: none;
+}
+
 .lock-body-overflow {
   overflow: hidden;
 }
@@ -215,15 +219,15 @@ header {
 
 .nav__container .rel-item:hover > .dropdown-list {
   opacity: 1;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
 }
 
 .nav__container .rel-item .dropdown-list {
-  display: block;
+  opacity: 0;
   position: absolute;
   background-color: #ecd7a8;
   z-index: 10;
+  -webkit-transition: opacity .4s;
+  transition: opacity .4s;
 }
 
 .nav__container .rel-item .dropdown-list a {

@@ -21,16 +21,17 @@
   <header id="home">
     <nav class="nav__container">
       <ul class="nav__container-list">
-        <li class="nav__container-list-item flex-item home-item"><a href="index.html"><span>&#8592;</span> home</a></li>
+        <li class="nav__container-list-item flex-item home-item">
+          <a class="nav__link" href="#"><span>&#8592;</span> home</a></li>
         <li class="nav__container-list-item">
           <a href="#"><img class="header__logo-img fixed-item" src="./svg/slodkiswiatciast.svg"
 						alt="Logo Slodki Swiat Ciast" /></a>
         </li>
-        <li class="nav__container-list-item flex-item rel-item offer-item"><a href="#">oferta</a>
+        <li class="nav__container-list-item flex-item rel-item offer-item"><a class="nav__link" href="#">oferta</a>
           <ul class="dropdown-list">
-            <li><a href="torty.html">Torty</a></li>
-            <li><a href="ciasta.html">Ciasta</a></li>
-            <li><a href="candybar.html">Candybar</a></li>
+            <li><a class="nav__link" href="torty.html">Torty</a></li>
+            <li><a class="nav__link" href="ciasta.html">Ciasta</a></li>
+            <li><a class="nav__link" href="candybar.html">Candybar</a></li>
           </ul>
         </li>
       </ul>
@@ -40,13 +41,15 @@
         <div class="line"></div>
       </div>
       <div class="nav__container-menu-mobile">
-        <ul>
-          <li><a href="index.html"><span>&#8592;</span> home</a></li>
-          <li class="mobile-item"><a href="#">oferta</a>
-            <ul>
-              <li><a href="torty.html">Torty</a></li>
-              <li><a href="ciasta.html">Ciasta</a></li>
-              <li><a href="candybar.html">Candybar</a></li>
+        <ul class="nav__container-menu-mobile-list">
+          <li class="nav__container-menu-mobile-item">
+            <a class="nav__link nav__link-mobile" href="#"><span>&#8592;</span> home</a></li>
+          <li class="nav__container-menu-mobile-item mobile-item"><a class="nav__link" href="#">oferta</a>
+            <ul class="dropdown__menu">
+              <li class="dropdown__menu-item"><a class="nav__link nav__link-mobile" href="torty.html">Torty</a></li>
+              <li class="dropdown__menu-item"><a class="nav__link nav__link-mobile" href="ciasta.html">Ciasta</a></li>
+              <li class="dropdown__menu-item"><a class="nav__link nav__link-mobile" href="candybar.html">Candybar</a>
+              </li>
             </ul>
           </li>
         </ul>

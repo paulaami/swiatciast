@@ -225,12 +225,7 @@ header {
   position: absolute;
   background-color: #ecd7a8;
   z-index: 10;
-  opacity: 0;
   pointer-events: none;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
 }
 
 .nav__container .rel-item .dropdown-list a {
@@ -260,20 +255,50 @@ header {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   z-index: 20;
+  cursor: pointer;
+  background-color: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 22px;
 }
 
 .nav__container-menu-mobile {
   display: none;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
 .nav__container-menu-mobile ul {
-  width: 100%;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
   top: 220px;
 }
 
 .nav__container-menu-mobile ul a {
   display: block;
+  width: 100%;
 }
 
 .nav__container-menu-mobile li {
@@ -295,32 +320,29 @@ header {
 .nav__container-menu-mobile .mobile-item ul {
   position: static;
   display: none;
-  padding: 30px 0 10px 0;
-  opacity: 0;
-  -webkit-transform: translateY(-10px);
-          transform: translateY(-10px);
-  -webkit-transition: all 0.4s ease;
-  transition: all 0.4s ease;
-  background-color: #bda399;
 }
 
 .nav__container-menu-mobile .mobile-item ul li {
-  left: 10px;
+  left: 30px;
+  text-align: left;
+  padding-bottom: 10px;
 }
 
-.nav__container-menu-mobile .mobile-item:hover > ul {
-  opacity: 1;
-  display: block;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px);
-  pointer-events: all;
+.nav__container-menu-mobile .mobile-item ul li:last-of-type {
+  padding-bottom: 0;
 }
 
 .nav__container-menu .line {
-  width: 26px;
+  width: 27px;
   height: 2px;
   background-color: #6c6c6c;
-  margin: 5px;
+}
+
+.show {
+  display: block !important;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+  pointer-events: all;
 }
 
 .show-nav {

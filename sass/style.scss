@@ -906,15 +906,11 @@ header {
 
 /*FOOTER*/
 
-.show-footer {
-  position: sticky;
-  left: 0;
-  bottom: 0;
-  opacity: 0.9;
-  z-index: 10;
-}
+
 
 .footer {
+  position: relative;
+  bottom: 0;
   padding: 15px;
   background-color: #856a5d;
   // transition: bottom 0.2s ease-in-out;
@@ -986,6 +982,14 @@ header {
       }
     }
   }
+}
+
+.show-footer {
+  position: sticky;
+  left: 0;
+  bottom: 0;
+  opacity: 0.9;
+  z-index: 10;
 }
 
 @import "./torty";

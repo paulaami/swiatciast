@@ -6,25 +6,29 @@ document.addEventListener('DOMContentLoaded', function () {
   const policy = document.querySelector('.footer__container-policy');
   const copyrights = document.querySelector('.footer__container-copyrights');
 
-  if (window.scrollY > 400 && window.innerWidth < 760) {
+  const toggleFooter = () => {
+   footer.classList.remove('show-footer');
+   policy.classList.remove('hide');
+   copyrights.classList.remove('hide');
+  }
+
+  if (window.scrollY > 400 && (window.scrollY <= document.body.offsetHeight - 1000) && window.innerWidth < 760) {
    policy.classList.add('hide');
    copyrights.classList.add('hide');
    footer.classList.add('show-footer');
   } else {
-   policy.classList.remove('hide');
-   copyrights.classList.remove('hide');
-   footer.classList.remove('show-footer');
+   toggleFooter();
   }
 
-  if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 120)) {
-   policy.classList.remove('hide');
-   copyrights.classList.remove('hide');
-   footer.classList.remove('show-footer');
-  }
+  // if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+  //  toggleFooter();
+  // }
 
   if (window.scrollY > 400 && window.innerWidth > 760) {
    footer.classList.add('show-footer');
   }
+  console.log(document.body.offsetHeight)
+  console.log(window.scrollY)
  }
 
  window.addEventListener('scroll', showFooter);

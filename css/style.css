@@ -979,10 +979,9 @@ header {
 
 /*FOOTER*/
 .footer {
-  position: relative;
-  bottom: 0;
   padding: 15px;
   background-color: #856a5d;
+  height: 120px;
 }
 
 .footer a,
@@ -1069,6 +1068,7 @@ header {
   bottom: 0;
   opacity: 0.9;
   z-index: 10;
+  height: auto;
 }
 
 .offer__price .handwritten {

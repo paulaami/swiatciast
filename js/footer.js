@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
    footer.classList.remove('show-footer');
   }
 
-  if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+  if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 120)) {
    policy.classList.remove('hide');
    copyrights.classList.remove('hide');
    footer.classList.remove('show-footer');

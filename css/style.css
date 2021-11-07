@@ -981,8 +981,8 @@ header {
 .footer {
   padding: 15px;
   background-color: #856a5d;
-  height: 120px;
-  position: static;
+  -webkit-transition: bottom 0.2s ease-in-out;
+  transition: bottom 0.2s ease-in-out;
 }
 
 .footer a,
@@ -1069,7 +1069,6 @@ header {
   bottom: 0;
   opacity: 0.9;
   z-index: 10;
-  height: auto;
 }
 
 .offer__price .handwritten {

@@ -1,4 +1,18 @@
 @media screen and (min-width: 992px) {
+  a.nav__link {
+    font-size: 2rem;
+  }
+
+  h1,
+  h2 {
+    font-size: 3.7rem;
+    font-weight: 500;
+  }
+
+  .text-uppercase-style {
+    font-size: 1.5rem;
+  }
+
   .main__section {
     &-container {
       &-box {
@@ -11,25 +25,9 @@
   }
 
   .about__section {
-    &-background {
-      .frame-one {
-        position: absolute;
-        top: -90px;
-        left: -90px;
-        display: block;
-        width: 200px;
-        transform: rotate(135deg);
-        fill: #d0a098;
-      }
-
-      .frame-two {
-        position: absolute;
-        bottom: -90px;
-        right: -90px;
-        display: block;
-        width: 200px;
-        fill: #d0a098;
-        transform: rotate(-45deg);
+    &-bottom {
+      .text-style {
+        font-size: 2rem;
       }
     }
   }
@@ -52,6 +50,10 @@
       justify-content: space-around;
       padding: 30px 60px;
       max-width: 1000px;
+    }
+
+    &-box-text {
+      font-size: 2.8rem;
     }
 
     .slick-prev {
@@ -78,21 +80,18 @@
 
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
-  h2 {
-    font-size: 4rem;
+  h2,
+  h1 {
+    font-size: 4.5rem;
   }
 
   .text-style {
     font-size: 1.8rem;
   }
 
-  .text-uppercase-style {
-    font-size: 1.4rem;
-  }
-  
   .nav__container {
     &-list {
       .offer-item {
@@ -175,14 +174,25 @@
         left: 50%;
         transform: translateX(-50%);
         width: 730px;
+
+        &-title {
+          display: block;
+          position: absolute;
+          font-size: 21rem;
+          font-family: "Playfair Display", serif;
+          letter-spacing: 0.1em;
+          color: #e4d2c9;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: -1;
+          text-transform: uppercase;
+        }
       }
     }
   }
 
   .offer__one {
-    h2 {
-      font-size: 4rem;
-    }
     &-right {
       flex-direction: row;
       justify-content: space-between;
@@ -196,6 +206,37 @@
   .offer__price-candy {
     .offer__price-container-text {
       width: 70%;
+    }
+  }
+
+  .offer__one-container-right h2 {
+    font-size: 4rem;
+  }
+
+  .offer__price .handwritten {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .offer__price {
+    &-container {
+      &-box {
+        &-title {
+          font-size: 25rem;
+        }
+      }
+    }
+  }
+
+  .section__gallery {
+    &-container {
+      max-width: 1300px;
+      &-box {
+        a {
+          width: 23%;
+        }
+      }
     }
   }
 }

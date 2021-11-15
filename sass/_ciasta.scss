@@ -2,6 +2,10 @@
   &-container {
     &-box {
       margin-bottom: 60px;
+
+      &-title {
+        display: none;
+      }
     }
   }
   .handwritten {
@@ -37,7 +41,6 @@
 
   .text-uppercase-style {
     margin-bottom: 40px;
-    font-size: 1.2rem;
   }
 
   ol li {

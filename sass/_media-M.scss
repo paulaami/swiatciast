@@ -169,7 +169,7 @@
       p {
         font-family: "Schnyder", serif;
         font-weight: 600;
-        font-size: 3rem;
+        font-size: 4rem;
         color: #c9886d;
         letter-spacing: 0.3rem;
         line-height: 1.5;
@@ -250,6 +250,7 @@
   .map__section {
     &-text {
       margin-bottom: 80px;
+      font-size: 2rem;
     }
 
     &-container {

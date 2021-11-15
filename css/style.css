@@ -226,8 +226,8 @@ header {
   position: absolute;
   background-color: #ecd7a8;
   z-index: 10;
-  -webkit-transition: opacity .4s;
-  transition: opacity .4s;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
 }
 
 .nav__container .rel-item .dropdown-list a {
@@ -343,9 +343,9 @@ header {
 }
 
 .nav__container-menu .line {
-  width: 30px;
+  width: 33px;
   height: 2px;
-  background-color: #6c6c6c;
+  background-color: #2b2b2b;
 }
 
 .show {
@@ -376,6 +376,33 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@-webkit-keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+@keyframes navItemsAnimation {
+  from {
+    -webkit-transform: translateX(-500px);
+            transform: translateX(-500px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+
+.nav-items-animation {
+  -webkit-animation: navItemsAnimation 1s both;
+          animation: navItemsAnimation 1s both;
 }
 
 .header__logo-img {
@@ -627,19 +654,20 @@ header {
 }
 
 .offer__section-description {
-  max-width: 450px;
+  max-width: 530px;
   margin-bottom: 50px;
   margin-top: 30px;
 }
 
 .offer__section-description p {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  font-size: 1.6rem;
+  font-family: "Schnyder", serif;
+  font-weight: 600;
+  font-size: 3rem;
+  color: #c9886d;
+  letter-spacing: 0.3rem;
+  line-height: 1.5;
   text-align: center;
-  color: #6a4531;
-  color: #855743;
+  text-transform: uppercase;
 }
 
 .offer__section-image {
@@ -801,7 +829,7 @@ header {
 .map__section-text {
   margin: 0 auto;
   width: 80vw;
-  max-width: 450px;
+  max-width: 600px;
   margin-bottom: 50px;
 }
 
@@ -813,6 +841,11 @@ header {
 .map__section-text p {
   text-align: justify;
   font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.map__section-text p:nth-child(2) {
+  font-weight: bold;
 }
 
 .map__section-container {
@@ -1232,12 +1265,12 @@ header {
 .offer__price-container-menu p {
   margin-bottom: 10px;
   font-family: "Denmark", sans-serif;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
 }
 
 .offer__price-container-menu a {
   color: #855743;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .offer__price-container-menu a:hover {
@@ -1396,6 +1429,10 @@ header {
   margin-bottom: 60px;
 }
 
+.offer__price-container-box-title {
+  display: none;
+}
+
 .offer__price .handwritten {
   position: relative;
   left: 50%;
@@ -1433,7 +1470,6 @@ header {
 
 .offer__price .text-uppercase-style {
   margin-bottom: 40px;
-  font-size: 1.2rem;
 }
 
 .offer__price ol li {
@@ -1514,10 +1550,10 @@ header {
     height: 300px;
   }
   .nav__container-menu {
-    top: 165px;
+    top: 170px;
   }
   .offer__one, .main__section-container {
-    margin-top: 165px;
+    margin-top: 170px;
   }
   .main__section-container-box {
     height: 250px;
@@ -1704,7 +1740,7 @@ header {
   .offer__section-description p {
     font-family: "Schnyder", serif;
     font-weight: 600;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #c9886d;
     letter-spacing: 0.3rem;
     line-height: 1.5;
@@ -1750,6 +1786,7 @@ header {
   /*map*/
   .map__section-text {
     margin-bottom: 80px;
+    font-size: 2rem;
   }
   .map__section-container {
     width: 90vw;
@@ -1870,31 +1907,25 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+  a.nav__link {
+    font-size: 2rem;
+  }
+  h1,
+  h2 {
+    font-size: 3.7rem;
+    font-weight: 500;
+  }
+  .text-uppercase-style {
+    font-size: 1.5rem;
+  }
   .main__section-container-box {
     height: 560px;
   }
   .main__section-container-box:nth-of-type(2) {
     height: 590px;
   }
-  .about__section-background .frame-one {
-    position: absolute;
-    top: -90px;
-    left: -90px;
-    display: block;
-    width: 200px;
-    -webkit-transform: rotate(135deg);
-            transform: rotate(135deg);
-    fill: #d0a098;
-  }
-  .about__section-background .frame-two {
-    position: absolute;
-    bottom: -90px;
-    right: -90px;
-    display: block;
-    width: 200px;
-    fill: #d0a098;
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
+  .about__section-bottom .text-style {
+    font-size: 2rem;
   }
   .offer__section-container {
     -webkit-box-orient: horizontal;
@@ -1922,6 +1953,9 @@ header {
     padding: 30px 60px;
     max-width: 1000px;
   }
+  .opinion__section-box-text {
+    font-size: 2.8rem;
+  }
   .opinion__section .slick-prev {
     left: 0;
   }
@@ -1932,16 +1966,14 @@ header {
 
 @media screen and (min-width: 1200px) {
   body {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
-  h2 {
-    font-size: 4rem;
+  h2,
+  h1 {
+    font-size: 4.5rem;
   }
   .text-style {
     font-size: 1.8rem;
-  }
-  .text-uppercase-style {
-    font-size: 1.4rem;
   }
   .nav__container-list .offer-item .dropdown-list {
     left: auto;
@@ -2007,8 +2039,19 @@ header {
             transform: translateX(-50%);
     width: 730px;
   }
-  .offer__one h2 {
-    font-size: 4rem;
+  .offer__price-container-box-title {
+    display: block;
+    position: absolute;
+    font-size: 21rem;
+    font-family: "Playfair Display", serif;
+    letter-spacing: 0.1em;
+    color: #e4d2c9;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    z-index: -1;
+    text-transform: uppercase;
   }
   .offer__one-right {
     -webkit-box-orient: horizontal;
@@ -2024,6 +2067,24 @@ header {
   }
   .offer__price-candy .offer__price-container-text {
     width: 70%;
+  }
+  .offer__one-container-right h2 {
+    font-size: 4rem;
+  }
+  .offer__price .handwritten {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .offer__price-container-box-title {
+    font-size: 25rem;
+  }
+  .section__gallery-container {
+    max-width: 1300px;
+  }
+  .section__gallery-container-box a {
+    width: 23%;
   }
 }
 /*# sourceMappingURL=style.css.map */

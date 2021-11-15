@@ -30,8 +30,9 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Cormorant", serif;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   line-height: 1.6;
   overflow-x: hidden;
   color: $main-gray;

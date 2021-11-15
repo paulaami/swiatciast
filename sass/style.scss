@@ -34,7 +34,6 @@ body {
   font-family: "Cormorant", serif;
   font-size: 1.8rem;
   line-height: 1.6;
-  overflow-x: hidden;
   color: $main-gray;
 }
 
@@ -224,7 +223,7 @@ header {
 
       li {
         display: block;
-        width: 150px;
+        width: 170px;
       }
     }
   }

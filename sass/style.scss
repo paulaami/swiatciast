@@ -1010,6 +1010,32 @@ header {
 @import "./ciasta";
 @import "./candy";
 
+.offer__one {
+  display: none;
+}
+
+.name .offer__one {
+  display: block;
+}
+
+.offer__price {
+  margin-top: 130px;
+
+  h2 {
+    margin-bottom: 45px;
+  }
+
+  .text-uppercase-style {
+    margin-bottom: 10px;
+  }
+}
+
+// .name .offer__one-container-right {
+//   left: 50%;
+//   top: 50%;
+//   transform: translate(-50%, -50%)
+// }
+
 @import "./media-S";
 @import "./media-M";
 @import "./media-L";

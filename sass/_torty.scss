@@ -1,3 +1,16 @@
+@keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}
+
+
 .offer__price .handwritten {
   font-family: "Denmark";
   font-size: 3.5rem;
@@ -5,9 +18,22 @@
   color: #2d2d2b;
 }
 .offer__one {
+  position: relative;
   padding: 80px 0 100px 0;
   margin-top: 150px;
   background-color: #e3d6c7;
+
+  .cake-bg {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    right: 8%;
+    top: 9%;
+    z-index: 0;
+    filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
+    transform: translatey(0px);
+    animation: float 4s ease-in-out infinite;
+  }
 
   span {
     font-weight: 600;

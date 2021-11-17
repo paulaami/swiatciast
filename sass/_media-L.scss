@@ -65,6 +65,31 @@
     }
   }
 
+  .map__section, .about__section, .offer__price {
+    position: relative;
+
+    &::before{
+      position: absolute;
+      content: url('../img/ciasta/cookies.png');
+      z-index: 0;
+      width: 80px;
+      height: auto;
+    }
+
+  }
+
+  .map__section::before, .offer__price::before {
+    left: 11%;
+    // transform: rotate(45deg);
+  }
+  .about__section::before {
+    bottom: 8%;
+    right: 7%;
+    transform: rotate(-90deg);
+  }
+
+
+
   // .contact__section {
   //   &-container {
   //     img {
@@ -192,7 +217,9 @@
     }
   }
 
-  .offer__one {
+  .offer__price{
+    
+
     &-right {
       flex-direction: row;
       justify-content: space-between;
@@ -200,6 +227,12 @@
       .right {
         width: 40%;
       }
+    }
+  }
+
+  .offer__torts .offer__one {
+    &::after, &::before {
+      content: url('');
     }
   }
 

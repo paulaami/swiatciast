@@ -1104,6 +1104,36 @@ header {
   z-index: 10;
 }
 
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-20px);
+            transform: translatey(-20px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
 .offer__price .handwritten {
   font-family: "Denmark";
   font-size: 3.5rem;
@@ -1112,9 +1142,25 @@ header {
 }
 
 .offer__one {
+  position: relative;
   padding: 80px 0 100px 0;
   margin-top: 150px;
   background-color: #e3d6c7;
+}
+
+.offer__one .cake-bg {
+  position: absolute;
+  width: 230px;
+  height: auto;
+  right: 8%;
+  top: 9%;
+  z-index: 0;
+  -webkit-filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
+          filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
+  -webkit-transform: translatey(0px);
+          transform: translatey(0px);
+  -webkit-animation: float 4s ease-in-out infinite;
+          animation: float 4s ease-in-out infinite;
 }
 
 .offer__one span {
@@ -1545,6 +1591,26 @@ header {
   font-weight: 500;
 }
 
+.offer__one {
+  display: none;
+}
+
+.name .offer__one {
+  display: block;
+}
+
+.offer__price {
+  margin-top: 130px;
+}
+
+.offer__price h2 {
+  margin-bottom: 45px;
+}
+
+.offer__price .text-uppercase-style {
+  margin-bottom: 10px;
+}
+
 @media screen and (min-width: 375px) {
   .header__logo-img {
     width: 300px;
@@ -1963,6 +2029,25 @@ header {
   .opinion__section .slick-next {
     right: 0px;
   }
+  .map__section, .about__section, .offer__price {
+    position: relative;
+  }
+  .map__section::before, .about__section::before, .offer__price::before {
+    position: absolute;
+    content: url("../img/ciasta/cookies.png");
+    z-index: 0;
+    width: 80px;
+    height: auto;
+  }
+  .map__section::before, .offer__price::before {
+    left: 11%;
+  }
+  .about__section::before {
+    bottom: 8%;
+    right: 7%;
+    -webkit-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -2054,7 +2139,7 @@ header {
     z-index: -1;
     text-transform: uppercase;
   }
-  .offer__one-right {
+  .offer__price-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2063,8 +2148,11 @@ header {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .offer__one-right .right {
+  .offer__price-right .right {
     width: 40%;
+  }
+  .offer__torts .offer__one::after, .offer__torts .offer__one::before {
+    content: url("");
   }
   .offer__price-candy .offer__price-container-text {
     width: 70%;

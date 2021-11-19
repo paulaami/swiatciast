@@ -1149,18 +1149,7 @@ header {
 }
 
 .offer__one .cake-bg {
-  position: absolute;
-  width: 230px;
-  height: auto;
-  right: 8%;
-  top: 9%;
-  z-index: 0;
-  -webkit-filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
-          filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
-  -webkit-transform: translatey(0px);
-          transform: translatey(0px);
-  -webkit-animation: float 4s ease-in-out infinite;
-          animation: float 4s ease-in-out infinite;
+  display: none;
 }
 
 .offer__one span {
@@ -1417,6 +1406,22 @@ header {
   width: 80vw;
 }
 
+.section__gallery a {
+  color: #855743;
+}
+
+.section__gallery a:hover {
+  color: #c9886d;
+}
+
+.section__gallery svg {
+  display: block;
+  width: 30px;
+  fill: #855743;
+  text-align: center;
+  margin: 0 auto;
+}
+
 .section__gallery h1 {
   font-family: "Denmark";
   text-align: center;
@@ -1426,7 +1431,6 @@ header {
 .section__gallery h2 {
   text-align: center;
   margin-bottom: 80px;
-  color: #855743;
 }
 
 .section__gallery-container {
@@ -1551,9 +1555,8 @@ header {
 }
 
 .offer__price-candy {
-  padding: 100px 20px;
+  padding: 50px 20px;
   width: 90vw;
-  background-color: #e3d6c7;
 }
 
 .offer__price-candy .right p {
@@ -1591,11 +1594,11 @@ header {
   font-weight: 500;
 }
 
-.offer__one {
-  display: none;
+.candy .offer__price__candy {
+  background-color: #E3D6C7;
 }
 
-.name .offer__one {
+.name .offer__one, .offer__torts .offer__one {
   display: block;
 }
 
@@ -1609,6 +1612,22 @@ header {
 
 .offer__price .text-uppercase-style {
   margin-bottom: 10px;
+}
+
+.offer__torts .offer__price {
+  margin-top: 0;
+}
+
+#offer__candy {
+  margin-top: 0;
+}
+
+.offer__price__candy {
+  background-color: #E3D6C7;
+}
+
+.name .offer__one {
+  margin-top: 0;
 }
 
 @media screen and (min-width: 375px) {
@@ -2029,17 +2048,22 @@ header {
   .opinion__section .slick-next {
     right: 0px;
   }
-  .map__section, .about__section, .offer__price {
+  .map__section,
+  .about__section,
+  .offer__price {
     position: relative;
   }
-  .map__section::before, .about__section::before, .offer__price::before {
+  .map__section::before,
+  .about__section::before,
+  .offer__price::before {
     position: absolute;
     content: url("../img/ciasta/cookies.png");
     z-index: 0;
     width: 80px;
     height: auto;
   }
-  .map__section::before, .offer__price::before {
+  .map__section::before,
+  .offer__price::before {
     left: 11%;
   }
   .about__section::before {
@@ -2153,6 +2177,21 @@ header {
   }
   .offer__torts .offer__one::after, .offer__torts .offer__one::before {
     content: url("");
+  }
+  .offer__torts .offer__one .cake-bg {
+    display: block;
+    position: absolute;
+    width: 230px;
+    height: auto;
+    right: 8%;
+    top: 9%;
+    z-index: 0;
+    -webkit-filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
+            filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+    -webkit-animation: float 4s ease-in-out infinite;
+            animation: float 4s ease-in-out infinite;
   }
   .offer__price-candy .offer__price-container-text {
     width: 70%;

@@ -1010,11 +1010,11 @@ header {
 @import "./ciasta";
 @import "./candy";
 
-.offer__one {
-  display: none;
-}
+// .offer__one {
+//   display: none;
+// }
 
-.name .offer__one {
+.name .offer__one, .offer__torts .offer__one {
   display: block;
 }
 
@@ -1029,6 +1029,23 @@ header {
     margin-bottom: 10px;
   }
 }
+
+.offer__torts .offer__price {
+  margin-top: 0;
+}
+
+#offer__candy {
+  margin-top: 0;
+}
+
+.offer__price__candy {
+  background-color: #E3D6C7;
+}
+
+.name .offer__one {
+  margin-top: 0;
+}
+
 
 // .name .offer__one-container-right {
 //   left: 50%;

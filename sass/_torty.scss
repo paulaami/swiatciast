@@ -24,15 +24,7 @@
   background-color: #e3d6c7;
 
   .cake-bg {
-    position: absolute;
-    width: 230px;
-    height: auto;
-    right: 8%;
-    top: 9%;
-    z-index: 0;
-    filter: invert(62%) sepia(8%) saturate(2368%) hue-rotate(332deg) brightness(96%) contrast(75%);
-    transform: translatey(0px);
-    animation: float 4s ease-in-out infinite;
+    display: none;
   }
 
   span {
@@ -265,6 +257,22 @@
   padding: 80px 0;
   width: 80vw;
 
+  a {
+    color: rgb(133, 87, 67);
+
+    &:hover {
+      color: rgb(201, 136, 109);
+    }
+  }
+
+  svg {
+    display: block;
+    width: 30px;
+    fill: rgb(133,87,67);
+    text-align: center;
+    margin: 0 auto;
+  }
+
   h1 {
     font-family: "Denmark";
     text-align: center;
@@ -273,7 +281,6 @@
   h2 {
     text-align: center;
     margin-bottom: 80px;
-    color: #855743;
   }
 
   &-container {

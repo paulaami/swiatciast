@@ -8,9 +8,8 @@
   }
 
   &-candy {
-    padding: 100px 20px;
+    padding: 50px 20px;
     width: 90vw;
-    background-color: #e3d6c7;
     .right {
       p {
         margin-bottom: 0;
@@ -48,4 +47,8 @@
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
   }
+}
+
+.candy .offer__price__candy {
+  background-color: #E3D6C7;
 }

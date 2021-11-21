@@ -37,9 +37,14 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: flex-start;
-      width: 900px;
+      width: 800px;
       &-box {
-        max-width: 270px;
+        max-width: 340px;
+        width: 50%;
+
+        img {
+          height: 300px;
+        }
       }
     }
   }
@@ -88,6 +93,11 @@
     bottom: 8%;
     right: 7%;
     transform: rotate(-90deg);
+  }
+
+  .offer__xmas::before {
+    content: url("../img/christmas/gingerbread-man.png");
+    width: 80px;
   }
 
   // .contact__section {
@@ -217,6 +227,12 @@
     }
   }
 
+  .offer__xmas {
+    .offer__price-container-box-title {
+      font-size: 18rem;
+    }
+  }
+
   .offer__price {
     &-right {
       flex-direction: row;
@@ -271,6 +287,12 @@
           font-size: 25rem;
         }
       }
+    }
+  }
+
+  .offer__xmas {
+    .offer__price-container-box-title {
+      font-size: 20rem;
     }
   }
 

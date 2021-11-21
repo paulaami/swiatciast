@@ -578,7 +578,7 @@ header {
       font-family: "Schnyder", serif;
       font-weight: 600;
       font-size: 3rem;
-      color: #c9886d;
+      color: #99471c;
       letter-spacing: 0.3rem;
       line-height: 1.5;
       text-align: center;
@@ -659,9 +659,13 @@ header {
       letter-spacing: 0.1rem;
       z-index: 10;
       text-align: center;
-      color: #6a4531;
+      color: #99471c;
       line-height: 1.4;
       font-size: 2rem;
+    }
+    .christmas-text {
+      color: #a73232;
+      text-transform: uppercase;
     }
   }
 }
@@ -841,22 +845,7 @@ header {
     min-height: 100%;
     z-index: 3;
 
-    // .contact-shadow {
-    //   position: absolute;
-    //   width: 100%;
-    //   height: 100%;
-    //   top: 0;
-    //   left: 0;
-    //   z-index: 0;
-    //   background-color: #170b067d;
-    // }
-
-    // .image-style {
-    // 	max-height: 600px;
-    // }
-
     &-form {
-      // position: absolute;
       padding: 35px 10px;
       width: 90vw;
       max-width: 600px;
@@ -919,6 +908,12 @@ header {
         }
       }
     }
+  }
+
+}
+.christmas__contact {
+  video {
+    display: block;
   }
 }
 
@@ -1010,9 +1005,7 @@ header {
 @import "./ciasta";
 @import "./candy";
 
-// .offer__one {
-//   display: none;
-// }
+/*CHRISTMAS*/
 
 .name .offer__one, .offer__torts .offer__one {
   display: block;
@@ -1044,6 +1037,16 @@ header {
 
 .name .offer__one {
   margin-top: 0;
+}
+
+.offer__price .christmas__offer, .christmas__offer {
+  color: rgba(153,71,28,1);
+}
+
+@media screen and (max-width: 766px) {
+  .offer__xmas, .offer__cookies, .offer__price__candy {
+    margin-top: 180px;
+  }
 }
 
 

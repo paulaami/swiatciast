@@ -663,7 +663,7 @@ header {
   font-family: "Schnyder", serif;
   font-weight: 600;
   font-size: 3rem;
-  color: #c9886d;
+  color: #99471c;
   letter-spacing: 0.3rem;
   line-height: 1.5;
   text-align: center;
@@ -756,9 +756,14 @@ header {
   letter-spacing: 0.1rem;
   z-index: 10;
   text-align: center;
-  color: #6a4531;
+  color: #99471c;
   line-height: 1.4;
   font-size: 2rem;
+}
+
+.offer__section-container .christmas-text {
+  color: #a73232;
+  text-transform: uppercase;
 }
 
 .opinion__section {
@@ -1008,6 +1013,10 @@ header {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   margin-right: 10px;
+}
+
+.christmas__contact video {
+  display: block;
 }
 
 /*FOOTER*/
@@ -1599,6 +1608,7 @@ header {
   background-color: #E3D6C7;
 }
 
+/*CHRISTMAS*/
 .name .offer__one, .offer__torts .offer__one {
   display: block;
 }
@@ -1629,6 +1639,16 @@ header {
 
 .name .offer__one {
   margin-top: 0;
+}
+
+.offer__price .christmas__offer, .christmas__offer {
+  color: #99471c;
+}
+
+@media screen and (max-width: 766px) {
+  .offer__xmas, .offer__cookies, .offer__price__candy {
+    margin-top: 180px;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -1825,14 +1845,7 @@ header {
     top: -90px;
   }
   .offer__section-description p {
-    font-family: "Schnyder", serif;
-    font-weight: 600;
     font-size: 4rem;
-    color: #c9886d;
-    letter-spacing: 0.3rem;
-    line-height: 1.5;
-    text-align: center;
-    text-transform: uppercase;
   }
   .offer__section-container {
     width: 650px;
@@ -2025,10 +2038,14 @@ header {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 900px;
+    width: 800px;
   }
   .offer__section-container-box {
-    max-width: 270px;
+    max-width: 340px;
+    width: 50%;
+  }
+  .offer__section-container-box img {
+    height: 300px;
   }
   .opinion__section-container {
     -webkit-box-orient: horizontal;
@@ -2072,6 +2089,10 @@ header {
     right: 7%;
     -webkit-transform: rotate(-90deg);
             transform: rotate(-90deg);
+  }
+  .offer__xmas::before {
+    content: url("../img/christmas/gingerbread-man.png");
+    width: 80px;
   }
 }
 
@@ -2164,6 +2185,9 @@ header {
     z-index: -1;
     text-transform: uppercase;
   }
+  .offer__xmas .offer__price-container-box-title {
+    font-size: 18rem;
+  }
   .offer__price-right {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -2208,6 +2232,9 @@ header {
 @media screen and (min-width: 1500px) {
   .offer__price-container-box-title {
     font-size: 25rem;
+  }
+  .offer__xmas .offer__price-container-box-title {
+    font-size: 20rem;
   }
   .section__gallery-container {
     max-width: 1300px;

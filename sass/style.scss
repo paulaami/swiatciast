@@ -120,6 +120,70 @@ h3 {
   text-align: center;
 }
 
+@keyframes show-alert {
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes hide-alert {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+}
+
+.allert-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cookie-alert {
+  position: fixed;
+  bottom: 10px;
+  width: 90%;
+  padding: 1.5em;
+  text-align: center;
+  background-color: $gold-color;
+  opacity: 0;
+  transform: translateY(100%);
+  z-index: 10;
+  animation: show-alert 1s 3s forwards;
+  pointer-events: none;
+
+  &::after {
+    position: absolute;
+    content: "";
+    left: 5px;
+    right: 5px;
+    background-color: transparent;
+    border: 1px solid $pure-white;
+
+    top: 5px;
+    bottom: 5px;
+  }
+
+  .btn {
+    padding: 0.7em 1.4em;
+    background-color: $pure-white;
+    font-size: 1.3rem;
+    pointer-events: auto;
+  }
+}
+
+.hide {
+  display: none;
+}
+
+
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -909,7 +973,6 @@ header {
       }
     }
   }
-
 }
 .christmas__contact {
   video {
@@ -1007,7 +1070,8 @@ header {
 
 /*CHRISTMAS*/
 
-.name .offer__one, .offer__torts .offer__one {
+.name .offer__one,
+.offer__torts .offer__one {
   display: block;
 }
 
@@ -1032,15 +1096,16 @@ header {
 }
 
 .offer__price__candy {
-  background-color: #E3D6C7;
+  background-color: #e3d6c7;
 }
 
 .name .offer__one {
   margin-top: 0;
 }
 
-.offer__price .christmas__offer, .christmas__offer {
-  color: rgba(153,71,28,1);
+.offer__price .christmas__offer,
+.christmas__offer {
+  color: rgba(153, 71, 28, 1);
 }
 
 .christmas-text {
@@ -1048,11 +1113,12 @@ header {
 }
 
 @media screen and (max-width: 766px) {
-  .offer__xmas, .offer__cookies, .offer__price__candy {
+  .offer__xmas,
+  .offer__cookies,
+  .offer__price__candy {
     margin-top: 180px;
   }
 }
-
 
 // .name .offer__one-container-right {
 //   left: 50%;

@@ -119,6 +119,98 @@ h3 {
   text-align: center;
 }
 
+@-webkit-keyframes show-alert {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes show-alert {
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes hide-alert {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+@keyframes hide-alert {
+  0% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+.allert-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.cookie-alert {
+  position: fixed;
+  bottom: 10px;
+  width: 90%;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #927959;
+  opacity: 0;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+  z-index: 10;
+  -webkit-animation: show-alert 1s 3s forwards;
+          animation: show-alert 1s 3s forwards;
+  pointer-events: none;
+}
+
+.cookie-alert::after {
+  position: absolute;
+  content: "";
+  left: 5px;
+  right: 5px;
+  background-color: transparent;
+  border: 1px solid #fff;
+  top: 5px;
+  bottom: 5px;
+}
+
+.cookie-alert .btn {
+  padding: 0.7em 1.4em;
+  background-color: #fff;
+  font-size: 1.3rem;
+  pointer-events: auto;
+}
+
+.hide {
+  display: none;
+}
+
 .flex-column {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1609,7 +1701,8 @@ header {
 }
 
 /*CHRISTMAS*/
-.name .offer__one, .offer__torts .offer__one {
+.name .offer__one,
+.offer__torts .offer__one {
   display: block;
 }
 
@@ -1634,14 +1727,15 @@ header {
 }
 
 .offer__price__candy {
-  background-color: #E3D6C7;
+  background-color: #e3d6c7;
 }
 
 .name .offer__one {
   margin-top: 0;
 }
 
-.offer__price .christmas__offer, .christmas__offer {
+.offer__price .christmas__offer,
+.christmas__offer {
   color: #99471c;
 }
 
@@ -1650,7 +1744,9 @@ header {
 }
 
 @media screen and (max-width: 766px) {
-  .offer__xmas, .offer__cookies, .offer__price__candy {
+  .offer__xmas,
+  .offer__cookies,
+  .offer__price__candy {
     margin-top: 180px;
   }
 }

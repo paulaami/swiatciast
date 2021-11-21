@@ -171,11 +171,12 @@ h3 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 300px;
 }
 
-.cookie-alert {
+.allert-wrapper .cookie-alert {
   position: fixed;
-  bottom: 10px;
+  bottom: 60px;
   width: 90%;
   padding: 1.5em;
   text-align: center;
@@ -189,7 +190,7 @@ h3 {
   pointer-events: none;
 }
 
-.cookie-alert::after {
+.allert-wrapper .cookie-alert::after {
   position: absolute;
   content: "";
   left: 5px;
@@ -200,7 +201,7 @@ h3 {
   bottom: 5px;
 }
 
-.cookie-alert .btn {
+.allert-wrapper .cookie-alert .btn {
   padding: 0.7em 1.4em;
   background-color: #fff;
   font-size: 1.3rem;

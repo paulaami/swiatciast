@@ -143,40 +143,41 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-width: 300px;
+  .cookie-alert {
+    position: fixed;
+    bottom: 60px;
+    width: 90%;
+    padding: 1.5em;
+    text-align: center;
+    background-color: $gold-color;
+    opacity: 0;
+    transform: translateY(100%);
+    z-index: 10;
+    animation: show-alert 1s 3s forwards;
+    pointer-events: none;
+  
+    &::after {
+      position: absolute;
+      content: "";
+      left: 5px;
+      right: 5px;
+      background-color: transparent;
+      border: 1px solid $pure-white;
+  
+      top: 5px;
+      bottom: 5px;
+    }
+  
+    .btn {
+      padding: 0.7em 1.4em;
+      background-color: $pure-white;
+      font-size: 1.3rem;
+      pointer-events: auto;
+    }
+  }
 }
 
-.cookie-alert {
-  position: fixed;
-  bottom: 10px;
-  width: 90%;
-  padding: 1.5em;
-  text-align: center;
-  background-color: $gold-color;
-  opacity: 0;
-  transform: translateY(100%);
-  z-index: 10;
-  animation: show-alert 1s 3s forwards;
-  pointer-events: none;
-
-  &::after {
-    position: absolute;
-    content: "";
-    left: 5px;
-    right: 5px;
-    background-color: transparent;
-    border: 1px solid $pure-white;
-
-    top: 5px;
-    bottom: 5px;
-  }
-
-  .btn {
-    padding: 0.7em 1.4em;
-    background-color: $pure-white;
-    font-size: 1.3rem;
-    pointer-events: auto;
-  }
-}
 
 .hide {
   display: none;

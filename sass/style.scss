@@ -58,12 +58,14 @@ ul {
 h2,
 h1 {
   font-family: "Schnyder", serif;
-  font-size: 3.3rem;
+  font-size: 4rem;
   text-transform: none;
   font-weight: 400;
   letter-spacing: 0.1rem;
   line-height: 1.2;
 }
+
+
 
 h3 {
   font-family: "Denmark";
@@ -923,6 +925,7 @@ header {
         margin-bottom: 20px;
         color: #fff;
         text-align: center;
+        text-transform: uppercase;
       }
 
       p {
@@ -1065,6 +1068,8 @@ header {
   z-index: 10;
 }
 
+
+
 @import "./torty";
 @import "./ciasta";
 @import "./candy";
@@ -1077,9 +1082,10 @@ header {
 }
 
 .offer__price {
-  margin-top: 130px;
+  margin-top: 120px;
 
   h2 {
+    padding: 0 10px;
     margin-bottom: 45px;
   }
 
@@ -1090,6 +1096,7 @@ header {
 
 .offer__torts .offer__price {
   margin-top: 0;
+  padding-top: 40px;
 }
 
 #offer__candy {

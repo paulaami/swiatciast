@@ -3,8 +3,12 @@
     font-size: 4rem;
   }
 
-  h2 {
-    font-size: 3.5rem;
+  h1,h2 {
+    font-size: 4.5rem;
+  }
+
+  .main__background {
+    top: 120px;
   }
 
   .nav__container {
@@ -26,7 +30,7 @@
         width: auto;
 
         .dropdown-list {
-          left: -63px;
+          left: -80px;
         }
       }
     }
@@ -292,7 +296,7 @@
     &-container {
       &-box {
         a {
-          width: 50%;
+          width: 47%;
           overflow: hidden;
         }
       }
@@ -301,7 +305,7 @@
 
   /*TORTY*/
   .offer__one {
-    margin-top: 130px;
+    margin-top: 120px;
 
     h2 {
       max-width: 580px;
@@ -337,10 +341,12 @@
       height: 100px;
     }
   }
-}
 
+}
 /*CIASTA*/
 
 .offer__cookies {
   flex-direction: column;
 }
+
+

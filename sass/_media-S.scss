@@ -65,6 +65,11 @@
       height: 320px;
     }
   }
+  .main__background {
+    .christmas-title {
+      font-size: 7rem;
+    }
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -83,6 +88,10 @@
       &-img {
         width: 50%;
       }
+    }
+
+    h3 {
+      font-size: 4rem;
     }
   }
 }

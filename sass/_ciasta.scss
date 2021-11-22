@@ -1,6 +1,65 @@
+.main__background {
+  position: relative;
+  top: 180px;
+  margin: 0 auto;
+  width: 100%;
+  height: 50vh;
+  max-height: 700px;
+  clip-path: inset(0);
+
+  &-img {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    filter: brightness(60%);
+    background-attachment: fixed;
+  }
+
+  h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    // font-family: 'Playfair Display', serif;
+    font-family: 'Denmark';
+    color : $pure-white;
+    // text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: 7rem;
+    text-align: center;
+    line-height: 1.4;
+  }
+
+  .img-cake {
+    background-image: url('/img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg');
+  }
+
+  .img-candy {
+    background-image: url('/img/lore-schodts-FIxdY7jOBus-unsplash.jpg');
+  }
+
+  .img-torts {
+    background-image: url('/img/triple-cake-s.jpg');
+  }
+
+  .img-christmas {
+    background-image: url('/img//christmas/christmas_bg-s.jpg');
+  }
+
+  .christmas-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 6rem;
+  }
+}
+
 
 
 .offer__price {
+
   &-container {
     &-box {
       margin-bottom: 60px;
@@ -53,9 +112,10 @@
 
   .box-price {
     position: relative;
-    color: #995c41;
+    color: #99471c;
     text-align: right;
     margin-bottom: 30px;
+    font-size: 2.2rem;
     &::after {
       position: absolute;
       content: "";

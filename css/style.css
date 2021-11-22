@@ -57,7 +57,7 @@ ul a {
 h2,
 h1 {
   font-family: "Schnyder", serif;
-  font-size: 3.3rem;
+  font-size: 4rem;
   text-transform: none;
   font-weight: 400;
   letter-spacing: 0.1rem;
@@ -1054,6 +1054,7 @@ header {
   margin-bottom: 20px;
   color: #fff;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .contact__section-container-form p {
@@ -1378,7 +1379,7 @@ header {
 }
 
 .offer__price {
-  padding: 80px 0;
+  padding: 80px 0 40px 0;
   background-color: #eee7e2;
   overflow-x: hidden;
 }
@@ -1525,10 +1526,11 @@ header {
   margin: 0 auto;
 }
 
-.section__gallery h1 {
+.section__gallery h3 {
   font-family: "Denmark";
   text-align: center;
   margin-bottom: 20px;
+  font-size: 3rem;
 }
 
 .section__gallery h2 {
@@ -1577,6 +1579,65 @@ header {
   -webkit-transform: scale(0.98);
           transform: scale(0.98);
   opacity: 0.9;
+}
+
+.main__background {
+  position: relative;
+  top: 180px;
+  margin: 0 auto;
+  width: 100%;
+  height: 50vh;
+  max-height: 700px;
+  -webkit-clip-path: inset(0);
+          clip-path: inset(0);
+}
+
+.main__background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+  background-attachment: fixed;
+}
+
+.main__background h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-family: 'Denmark';
+  color: #fff;
+  letter-spacing: .1em;
+  font-size: 7rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
+.main__background .img-cake {
+  background-image: url("/img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg");
+}
+
+.main__background .img-candy {
+  background-image: url("/img/lore-schodts-FIxdY7jOBus-unsplash.jpg");
+}
+
+.main__background .img-torts {
+  background-image: url("/img/triple-cake-s.jpg");
+}
+
+.main__background .img-christmas {
+  background-image: url("/img//christmas/christmas_bg-s.jpg");
+}
+
+.main__background .christmas-title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 6rem;
 }
 
 .offer__price-container-box {
@@ -1634,9 +1695,10 @@ header {
 
 .offer__price .box-price {
   position: relative;
-  color: #995c41;
+  color: #99471c;
   text-align: right;
   margin-bottom: 30px;
+  font-size: 2.2rem;
 }
 
 .offer__price .box-price::after {
@@ -1708,10 +1770,11 @@ header {
 }
 
 .offer__price {
-  margin-top: 130px;
+  margin-top: 120px;
 }
 
 .offer__price h2 {
+  padding: 0 10px;
   margin-bottom: 45px;
 }
 
@@ -1721,6 +1784,7 @@ header {
 
 .offer__torts .offer__price {
   margin-top: 0;
+  padding-top: 40px;
 }
 
 #offer__candy {
@@ -1801,6 +1865,9 @@ header {
   .main__section-container-box:nth-of-type(2) {
     height: 320px;
   }
+  .main__background .christmas-title {
+    font-size: 7rem;
+  }
 }
 
 @media screen and (min-width: 576px) {
@@ -1813,14 +1880,20 @@ header {
   .section__gallery-container-img {
     width: 50%;
   }
+  .section__gallery h3 {
+    font-size: 4rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .handwritten {
     font-size: 4rem;
   }
-  h2 {
-    font-size: 3.5rem;
+  h1, h2 {
+    font-size: 4.5rem;
+  }
+  .main__background {
+    top: 120px;
   }
   .nav__container .flex-item {
     display: block;
@@ -1837,7 +1910,7 @@ header {
     width: auto;
   }
   .nav__container-list .offer-item .dropdown-list {
-    left: -63px;
+    left: -80px;
   }
   .nav__container-menu {
     display: none;
@@ -2064,12 +2137,12 @@ header {
     font-size: 1.1rem;
   }
   .section__gallery-container-box a {
-    width: 50%;
+    width: 47%;
     overflow: hidden;
   }
   /*TORTY*/
   .offer__one {
-    margin-top: 130px;
+    margin-top: 120px;
   }
   .offer__one h2 {
     max-width: 580px;
@@ -2117,7 +2190,7 @@ header {
   }
   h1,
   h2 {
-    font-size: 3.7rem;
+    font-size: 5.5rem;
     font-weight: 500;
   }
   .text-uppercase-style {
@@ -2207,7 +2280,7 @@ header {
   }
   h2,
   h1 {
-    font-size: 4.5rem;
+    font-size: 6rem;
   }
   .text-style {
     font-size: 1.8rem;

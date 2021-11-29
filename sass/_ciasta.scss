@@ -15,6 +15,7 @@
     height: 100%;
     background-position: center;
     background-size: cover;
+    background-repeat: no-repeat;
     filter: brightness(60%);
     background-attachment: fixed;
   }
@@ -23,43 +24,34 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    // font-family: 'Playfair Display', serif;
-    font-family: 'Denmark';
-    color : $pure-white;
-    // text-transform: uppercase;
-    letter-spacing: .1em;
-    font-size: 7rem;
+    transform: translate(-50%, -50%);
+    font-family: "Dancing Script", cursive;
+    color: $pure-white;
+    letter-spacing: 0.1em;
+    font-size: 6rem;
     text-align: center;
     line-height: 1.4;
   }
 
   .img-cake {
-    background-image: url('../img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg');
+    background-image: url("../img/ciasta/cake-bg-m.jpg");
   }
 
   .img-candy {
-    background-image: url('../img/lore-schodts-FIxdY7jOBus-unsplash.jpg');
+    background-image: url("../img/candybar/candybar-bg-m.jpg");
   }
 
   .img-torts {
-    background-image: url('../img/triple-cake-s.jpg');
+    background-image: url("../img/torty/triple-cake-m.jpg");
+    background-position: 50% 25%;
   }
 
   .img-christmas {
-    background-image: url('../img//christmas/christmas_bg-s.jpg');
-  }
-
-  .christmas-title {
-    font-family: 'Dancing Script', cursive;
-    font-size: 6rem;
+    background-image: url("../img/christmas/christmas_bg-s.jpg");
   }
 }
 
-
-
 .offer__price {
-
   &-container {
     &-box {
       margin-bottom: 60px;

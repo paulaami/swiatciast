@@ -82,7 +82,6 @@ h3 {
   text-transform: uppercase;
   letter-spacing: 0.2rem;
   background-color: #855743;
-  /*#463938*/
   color: #fff;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
@@ -1600,6 +1599,7 @@ header {
   height: 100%;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
   background-attachment: fixed;
@@ -1611,33 +1611,29 @@ header {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  font-family: 'Denmark';
+  font-family: "Dancing Script", cursive;
   color: #fff;
-  letter-spacing: .1em;
-  font-size: 7rem;
+  letter-spacing: 0.1em;
+  font-size: 6rem;
   text-align: center;
   line-height: 1.4;
 }
 
 .main__background .img-cake {
-  background-image: url("../img/kaouther-djouada-hcEDfkiVmMI-unsplash.jpg");
+  background-image: url("../img/ciasta/cake-bg-m.jpg");
 }
 
 .main__background .img-candy {
-  background-image: url("../img/lore-schodts-FIxdY7jOBus-unsplash.jpg");
+  background-image: url("../img/candybar/candybar-bg-m.jpg");
 }
 
 .main__background .img-torts {
-  background-image: url("../img/triple-cake-s.jpg");
+  background-image: url("../img/torty/triple-cake-m.jpg");
+  background-position: 50% 25%;
 }
 
 .main__background .img-christmas {
-  background-image: url("../img//christmas/christmas_bg-s.jpg");
-}
-
-.main__background .christmas-title {
-  font-family: 'Dancing Script', cursive;
-  font-size: 6rem;
+  background-image: url("../img/christmas/christmas_bg-s.jpg");
 }
 
 .offer__price-container-box {
@@ -1760,7 +1756,7 @@ header {
 }
 
 .candy .offer__price__candy {
-  background-color: #E3D6C7;
+  background-color: #e3d6c7;
 }
 
 /*CHRISTMAS*/
@@ -1824,7 +1820,8 @@ header {
   .nav__container-menu {
     top: 170px;
   }
-  .offer__one, .main__section-container {
+  .offer__one,
+  .main__section-container {
     margin-top: 170px;
   }
   .main__section-container-box {
@@ -1865,7 +1862,7 @@ header {
   .main__section-container-box:nth-of-type(2) {
     height: 320px;
   }
-  .main__background .christmas-title {
+  .main__background h1 {
     font-size: 7rem;
   }
 }
@@ -1889,11 +1886,19 @@ header {
   .handwritten {
     font-size: 4rem;
   }
-  h1, h2 {
+  h1,
+  h2 {
     font-size: 4.5rem;
   }
   .main__background {
     top: 120px;
+  }
+  .main__background h1 {
+    font-size: 10rem;
+  }
+  .main__background .img-christmas {
+    background-image: url("../img/christmas/christmas_bg-m.jpg");
+    background-position: 50% 120%;
   }
   .nav__container .flex-item {
     display: block;
@@ -2178,6 +2183,7 @@ header {
 
 /*CIASTA*/
 .offer__cookies {
+  z-index: 0;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -2185,6 +2191,13 @@ header {
 }
 
 @media screen and (min-width: 992px) {
+  .main__background {
+    top: 120px;
+  }
+  .main__background .img-christmas {
+    background-image: url("../img/christmas/christmas_bg-m.jpg");
+    background-position: 50% 70%;
+  }
   a.nav__link {
     font-size: 2rem;
   }
@@ -2248,13 +2261,14 @@ header {
   .about__section,
   .offer__price {
     position: relative;
+    z-index: 0;
   }
   .map__section::before,
   .about__section::before,
   .offer__price::before {
     position: absolute;
     content: url("../img/ciasta/cookies.png");
-    z-index: 0;
+    z-index: -1;
     width: 80px;
     height: auto;
   }
@@ -2275,6 +2289,18 @@ header {
 }
 
 @media screen and (min-width: 1200px) {
+  .main__background h1 {
+    font-size: 12rem;
+  }
+  .main__background .img-candy {
+    background-image: url("../img/candybar/candybar-bg-l.jpg");
+  }
+  .main__background .img-torts {
+    background-image: url("../img/torty/triple-cake-l.jpg");
+  }
+  .main__background .img-cake {
+    background-image: url("../img/ciasta/cake-bg-l.jpg");
+  }
   body {
     font-size: 2rem;
   }

@@ -1,4 +1,11 @@
 @media screen and (min-width: 992px) {
+  .main__background {
+    top: 120px;
+    .img-christmas {
+      background-image: url("../img/christmas/christmas_bg-m.jpg");
+      background-position: 50% 70%;
+    }
+  }
   a.nav__link {
     font-size: 2rem;
   }
@@ -12,8 +19,6 @@
   .text-uppercase-style {
     font-size: 1.5rem;
   }
-
-  
 
   .main__section {
     &-container {
@@ -76,11 +81,12 @@
   .about__section,
   .offer__price {
     position: relative;
+    z-index: 0;
 
     &::before {
       position: absolute;
       content: url("../img/ciasta/cookies.png");
-      z-index: 0;
+      z-index: -1;
       width: 80px;
       height: auto;
     }
@@ -89,7 +95,6 @@
   .map__section::before,
   .offer__price::before {
     left: 11%;
-    // transform: rotate(45deg);
   }
   .about__section::before {
     bottom: 8%;
@@ -104,6 +109,21 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .main__background {
+    h1 {
+      font-size: 12rem;
+    }
+    .img-candy {
+      background-image: url("../img/candybar/candybar-bg-l.jpg");
+    }
+    .img-torts {
+      background-image: url("../img/torty/triple-cake-l.jpg");
+    }
+    .img-cake {
+      background-image: url("../img/ciasta/cake-bg-l.jpg");
+    }
+  }
+
   body {
     font-size: 2rem;
   }

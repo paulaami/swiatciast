@@ -1,15 +1,14 @@
 @keyframes float {
-	0% {
-		transform: translatey(0px);
-	}
-	50% {
-		transform: translatey(-20px);
-	}
-	100% {
-		transform: translatey(0px);
-	}
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
 }
-
 
 .offer__price .handwritten {
   font-family: "Denmark";
@@ -269,7 +268,7 @@
   svg {
     display: block;
     width: 30px;
-    fill: rgb(133,87,67);
+    fill: rgb(133, 87, 67);
     text-align: center;
     margin: 0 auto;
   }

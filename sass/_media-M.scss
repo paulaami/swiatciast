@@ -3,12 +3,20 @@
     font-size: 4rem;
   }
 
-  h1,h2 {
+  h1,
+  h2 {
     font-size: 4.5rem;
   }
 
   .main__background {
+    h1 {
+      font-size: 10rem;
+    }
     top: 120px;
+    .img-christmas {
+      background-image: url("../img/christmas/christmas_bg-m.jpg");
+      background-position: 50% 120%;
+    }
   }
 
   .nav__container {
@@ -186,8 +194,6 @@
     }
 
     &-header {
-
-
       .opinion-quote {
         bottom: -50%;
         left: 10%;
@@ -341,12 +347,10 @@
       height: 100px;
     }
   }
-
 }
 /*CIASTA*/
 
 .offer__cookies {
+  z-index: 0;
   flex-direction: column;
 }
-
-
